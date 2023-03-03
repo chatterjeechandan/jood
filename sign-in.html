@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Sign In</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body dir="rtl"> 
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 navbar-expand sign-in-header">
+        <div class="container d-flex flex-row">            
+        <a href="/" class="d-flex align-items-center col-md- mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="./images/logo-white.png" class="logo">
+        </a> 
+        <div class="desktop-nav">       
+          <div class="collapse navbar-collapse mt-lg-3" id="navbarsExample06">
+              <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المستفيدين</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المساهمين</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات الجمعيات</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">المبادرات</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">انشاء مبادرة</a>
+                </li>  
+              </ul>
+          </div>
+        </div>
+        <div class="col-md-2 d-flex justify-content-end header-account-area">
+          <div class="loggedin-holder">
+            <a href="#"><img src="./images/no-sign-in.png"></a>
+          </div>
+        </div>
+        </div>
+    </header>   
+    <main class="sign-in-container">    
+      <section class="py-5 text-center container transparent-container">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start col-md-8 blank-area"></div>
+          <div class="img-holder-about col-md-4 text-end">
+            <form class="needs-validation" novalidate="">
+              <h3>الدخول لحسابك</h3>
+              <p>اهلا بك من جديد معنا برجاء تسجيل الدخول لتتمكن من الاطلاع  علي تفاصيل حسابك</p>
+              <div class="row g-3">
+                <div class="col-md-12">
+                  <label for="firstName" class="form-label">رقم الجوال</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="+966xxxxxxxxx" value="" required="">
+                </div>  
+                <div class="form-check custom-checkbox">                
+                  <input type="checkbox" class="form-check-input custom-control-input" id="same-address">
+                  <label class="form-check-label" for="same-address">أوافق على الضوابط والاحكام</label>
+                </div>
+                <button class="w-100 btn btn-primary btn-lg" type="submit">تسجيل الدخول</button>
+                </div>
+                <p class="pt-2">
+                  اذا كنت لا تملك حساب مسبقا يمكنك <a href="#">انشاء حساب</a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>    
+    <footer>
+      <div class="container px-4 pt-5">        
+        <div class="row row-cols-1 row-cols-sm-4 row-cols-md-2 row-cols-lg-5">
+          <div class="col d-flex align-items-start">
+            <div class="text-center mt-5 footer-column mt-sm-0">
+              <img src="./images/Brand Logo Colorful.png">
+              <p class="barlow-font foot-logo-text mt-2">Joodeskan.sa</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">مساهمات سريعة</h4>
+              <div class="footer-title-divider"></div>
+              <ul>
+                <li>سياسات المساهمة</li>
+                <li>سياسة الخصوصية</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">عن جود الإسكان</h4>
+              <div class="footer-title-divider"></div>
+              <ul>
+                <li>من نحن</li>
+                <li>الإبلاغ عن مشكلة</li>
+                <li>الأسئلة الشائعة</li>
+                <li>تواصل معنا </li>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">طرق الدفع المتاحة</h4>
+              <div class="footer-title-divider"></div>
+              <div class="row row-cols-2 card-images">
+                <div class="card-img-holder">
+                  <img src="./images/Group 1000006017.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start mx-sm-auto">
+            <div class="text-center mt-5 footer-column mt-sm-0">
+              <img src="./images/Other Brand Logo.png">
+              <p class="barlow-font foot-logo-text mt-2">Housing quality - 2023</p>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-2 mb-3"/>
+        <p class="text-center m-0 pb-3 barlow-font foot-logo-text">© 2023 Joodeskan.sa</p>
+      </div>
+    </footer>
+</body>
+</html>

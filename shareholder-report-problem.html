@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Report Problem</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body dir="rtl"> 
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 navbar-expand">
+        <div class="container d-flex flex-row">            
+        <a href="/" class="d-flex align-items-center col-md- mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="./images/logo.png" class="logo">
+        </a>
+        <div class="desktop-nav">     
+          <div class="collapse navbar-collapse mt-lg-3" id="navbarsExample06">
+              <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المستفيدين</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المساهمين</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات الجمعيات</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">المبادرات</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">انشاء مبادرة</a>
+                </li>  
+              </ul>
+          </div>
+        </div> 
+        <div class="col-md-2 d-flex justify-content-end header-account-area">
+          <div class="notification-holder">
+            <a href="#"><img src="./images/bell-01.png"></a>
+          </div>
+          <div class="loggedin-holder">
+            <a href="#"><img src="./images/Avatar.png"></a>
+          </div>
+        </div>
+        </div>
+      </header>   
+    <main class="white-back">    
+      <section class="py-5 text-center container transparent-container report-problem-container">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start col-md-8">            
+            <h3>الابلاغ عن مشكلة</h3>           
+            <div class="card-text mb-auto about-us-first-section-description d-flex report-problem">
+              <form class="needs-validation report-problem" novalidate="">
+                <div class="row g-3">
+                  <div class="col-sm-12">
+                    <label for="firstName" class="form-label">الاسم الكامل</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="محمد علي احمد" value="" required="">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">البريد الإلكتروني </label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                  </div>     
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">الجوال</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                  </div>      
+                  <div class="my-3">
+                    <label for="lastName" class="form-label">الجوال</label>
+                    <div class="d-flex">
+                      <div class="form-check">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                        <label class="form-check-label" for="credit">مشاكل دفع</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                        <label class="form-check-label" for="debit">مشاكل فنية</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                        <label class="form-check-label" for="paypal">مشاكل كرت الإهداء</label>
+                      </div>
+                    </div>
+                  </div>      
+                  <div class="col-md-12">
+                    <label for="country" class="form-label">نوع المشكلة</label>
+                    <select class="form-select" id="country" required="">
+                      <option value="">أدخلت مبلغ خاطىء</option>
+                      <option>أدخلت مبلغ خاطىء</option>
+                    </select>
+                  </div>      
+                  <div class="col-sm-12">
+                    <label for="firstName" class="form-label">المبلغ الذي تم دفعه</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="محمد علي احمد" value="" required="">
+                  </div>
+                  <div class="col-sm-12">
+                    <label for="firstName" class="form-label">المرفقات</label>
+                    <div class="drag-image">
+                      <button type="button"><img src="./images/upload-icon.png"></button>                      
+                      <p>سحب وإفلات أو تصفح الملفات للتحميل</p>
+                      <input type="file" hidden>
+                    </div>
+                    <span class="drag-image-info">*الحد الأقصى 4 MB</span>
+                  </div>
+                <button class="btn btn-secondary btn-lg w-auto px-5" type="submit">ارسل</button>
+              </form>            
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>    
+    <footer>
+      <div class="container px-4 pt-5">        
+        <div class="row row-cols-1 row-cols-sm-4 row-cols-md-2 row-cols-lg-5">
+          <div class="col d-flex align-items-start">
+            <div class="text-center mt-5 footer-column mt-sm-0">
+              <img src="./images/Brand Logo Colorful.png">
+              <p class="barlow-font foot-logo-text mt-2">Joodeskan.sa</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">مساهمات سريعة</h4>
+              <div class="footer-title-divider"></div>
+              <ul>
+                <li>سياسات المساهمة</li>
+                <li>سياسة الخصوصية</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">عن جود الإسكان</h4>
+              <div class="footer-title-divider"></div>
+              <ul>
+                <li>من نحن</li>
+                <li>الإبلاغ عن مشكلة</li>
+                <li>الأسئلة الشائعة</li>
+                <li>تواصل معنا </li>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">طرق الدفع المتاحة</h4>
+              <div class="footer-title-divider"></div>
+              <div class="row row-cols-2 card-images">
+                <div class="card-img-holder">
+                  <img src="./images/Group 1000006017.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start mx-sm-auto">
+            <div class="text-center mt-5 footer-column mt-sm-0">
+              <img src="./images/Other Brand Logo.png">
+              <p class="barlow-font foot-logo-text mt-2">Housing quality - 2023</p>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-2 mb-3"/>
+        <p class="text-center m-0 pb-3 barlow-font foot-logo-text">© 2023 Joodeskan.sa</p>
+      </div>
+    </footer>
+</body>
+</html>
+
+<script>
+  const dropArea = document.querySelector(".drag-image"),
+dragText = dropArea.querySelector("h6"),
+button = dropArea.querySelector("button"),
+input = dropArea.querySelector("input");
+let file; 
+
+button.onclick = ()=>{
+  input.click(); 
+}
+
+input.addEventListener("change", function(){
+ 
+  file = this.files[0];
+  dropArea.classList.add("active");
+  viewfile();
+});
+
+dropArea.addEventListener("dragover", (event)=>{
+  event.preventDefault();
+  dropArea.classList.add("active");
+  dragText.textContent = "Release to Upload File";
+});
+
+
+dropArea.addEventListener("dragleave", ()=>{
+  dropArea.classList.remove("active");
+  dragText.textContent = "Drag & Drop to Upload File";
+}); 
+
+dropArea.addEventListener("drop", (event)=>{
+  event.preventDefault(); 
+   
+  file = event.dataTransfer.files[0];
+  viewfile(); 
+});
+
+function viewfile(){
+  let fileType = file.type; 
+  let validExtensions = ["image/jpeg", "image/jpg", "image/png"];
+  if(validExtensions.includes(fileType)){ 
+    let fileReader = new FileReader(); 
+    fileReader.onload = ()=>{
+      let fileURL = fileReader.result; 
+       let imgTag = `<img src="${fileURL}" alt="image">`;
+      dropArea.innerHTML = imgTag; 
+    }
+    fileReader.readAsDataURL(file);
+  }else{
+    alert("This is not an Image File!");
+    dropArea.classList.remove("active");
+    dragText.textContent = "Drag & Drop to Upload File";
+  }
+}
+</script>
