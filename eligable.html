@@ -2,25 +2,25 @@
 <html lang="en">
   <head>  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>Sign Up</title>
+    <title>Eligible</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body dir="rtl"> 
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 navbar-expand sign-in-header">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 navbar-expand">
         <div class="container d-flex flex-row">            
         <a href="/" class="d-flex align-items-center col-md- mb-2 mb-md-0 text-dark text-decoration-none">
-          <img src="./images/logo-white.png" class="logo">
+          <img src="./images/logo.png" class="logo">
         </a> 
-        <div class="desktop-nav">        
+        <div class="desktop-nav">       
           <div class="collapse navbar-collapse mt-lg-3" id="navbarsExample06">
               <ul class="navbar-nav me-auto mb-2 mb-xl-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                  <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المستفيدين</a>
+                  <a class="nav-link dropdown-toggle active" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المستفيدين</a>
                   <ul class="dropdown-menu" aria-labelledby="dropdown06">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -58,34 +58,40 @@
           </div>
         </div>
         <div class="col-md-2 d-flex justify-content-end header-account-area">
+          <div class="notification-holder">
+            <a href="#"><img src="./images/bell-01.png"></a>
+          </div>
           <div class="loggedin-holder">
-            <a href="#"><img src="./images/no-sign-in.png"></a>
+            <a href="#"><img src="./images/Avatar.png"></a>
           </div>
         </div>
         </div>
     </header>   
-    <main class="sign-in-container">    
+    <main class="sign-in-container eligable">    
       <section class="py-5 text-center container transparent-container">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start col-md-8 blank-area"></div>
           <div class="img-holder-about col-md-4 text-end">
-            <form class="needs-validation" novalidate="">
-              <h3>انشاء حساب جديد</h3>
-              <p>نسعد بانضمامك لاسرة جود الاسكان لنتشارك الفرحة بنقاذ الكثير من الاسر التي تننظر وجودك</p>
-              <div class="row g-3">
-                <div class="col-md-12">
-                  <label for="firstName" class="form-label">رقم الجوال</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="+966xxxxxxxxx" value="" required="">
-                </div>  
-                <div class="form-check custom-checkbox">                
-                  <input type="checkbox" class="form-check-input custom-control-input" id="same-address">
-                  <label class="form-check-label" for="same-address">أوافق على الضوابط والاحكام</label>
+            <form class="needs-validation eligable-form" novalidate="">
+              <h3 class="text-end">مستحق</h3>
+              <p class="sub-header">تفيد البيانات التي لدينا انك مستحق للدعم. في حال واجهتك مشكلة فيرجى التواصل مع أقرب جمعية إليك </p>            
+              <div class="row g-3">     
+                <div class="eligable-table d-flex">
+                  <div class="row flex-row">
+                    <div class="first-cell">الهوية الوطنية:</div>
+                    <div class="second-cell">1000000000</div>
+                  </div>
+                  <div class="row flex-row">
+                    <div class="first-cell">حالة الاستحقاق:</div>
+                    <div class="second-cell">مستحق</div>
+                  </div>
                 </div>
-                <button class="btn btn-primary btn-lg" type="submit">انشاء حساب</button>
-                </div>
-                <p class="pt-4">
-                  لديك حساب بالفعل <a href="#">تسجيل الدخول</a>
-                </p>
+                <div class="eligable-img d-flex mx-auto">
+                  <div class="img ms-3"><img src="./images/Profile Dasboard Icon.png"></div>
+                  <p>للمساعدة والبحث عن أقرب جمعية إليك</p>
+                </div>          
+                <button class="btn btn-primary btn-lg eligable-button" type="submit">الجمعيات الشريكة</button>
+                </div>                
             </form>
           </div>
         </div>
