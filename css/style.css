@@ -48,14 +48,14 @@ a:hover{
  .btn-primary {
     background-color: #3D9474;
     border-color: #3D9474;
-    border-radius: 25px;
+    border-radius: 30px;
     font-size: 16px;
 }
 
 .btn-secondary{
     background-color: #FA9A2A;
     border-color: #FA9A2A;
-    border-radius: 25px;
+    border-radius: 30px;
     font-size: 16px;
 }
 
@@ -175,7 +175,7 @@ header{
 .nav-link.active{
     color: #3D9474 !important;
     padding-bottom: 12px;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid !important;
 }
 
 input.form-control{
@@ -1105,6 +1105,92 @@ form.report-problem{
     line-height: 18px;
 }
 
+/******************Individual Initiative***********************/
+
+.advance-search-area{
+    display: inline-block !important;
+    width: 42%;
+}
+
+.initiative-container .top-img img{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+.initiative-container .top-img .greenbutton{
+    display: flex;    
+    padding: 5px 13px;   
+    position: absolute;
+    width: auto;    
+    right: 16px;
+    bottom: 24px;
+    background: #A6C846;
+    border-radius: 15px;   
+    margin-top: 2;
+    color: font-e;
+    font-weight: 600;
+}
+
+.initiative-container .small-icon-text{
+    color: #9CA3AF;
+    margin-right: 10px;
+}
+
+.card.inv-initiative{
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px !important;
+    border-radius: 10px;
+}
+
+.three-icon-holder{
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.completed-case{
+   color: #3D9474;
+}
+
+.col.completed{
+    opacity: 0.6;
+}
+
+
+/*************************Pagination****************************/
+.pagination-holder .page-no{
+    padding: 10px 17px;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+.pagination-holder .pager{
+    background: #EFEFEF;
+    border-radius: 10px;
+}
+
+.pagination-holder .dotter-area{
+    padding: 0px 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.pagination-holder .page-no.active{
+    background-color: #3D9474;
+    color: #fff;  
+    border-radius: 10px;  
+}
+
+/*******************tab*****************************/
+.nav-tabs{
+    border:0;
+}
+.nav-tabs .nav-link{
+    border: 0;
+    font-size: 20px;
+    color: #1F2937;
+}
+.nav-tabs .nav-link span{
+    font-size: 25px;
+    margin-left: 6px;
+}
+
 /****************************Mobile Query**********************************/
 
 
@@ -1220,6 +1306,17 @@ form.report-problem{
     .initiative-container label{
         margin-left: auto;
         display: flex;
+    }
+    .pagination-holder{
+        display: none !important;
+    }
+    .advance-search-area{
+        width: 100%;
+    }
+    .advance-search-btn{
+        width: 100% !important;
+        text-align: center;
+        display: block !important;
     }
 }
 
