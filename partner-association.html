@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Partner Association</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link href="css/style.css" rel="stylesheet">   
+    <link href="css/css-circular-prog-bar.css" rel="stylesheet">
+  </head>
+  <body dir="rtl"> 
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 navbar-expand">
+        <div class="container d-flex flex-row">            
+        <a href="/" class="d-flex align-items-center col-md- mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="./images/logo.png" class="logo">
+        </a>
+        <div class="desktop-nav">     
+          <div class="collapse navbar-collapse mt-lg-3" id="navbarsExample06">
+              <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المستفيدين</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المساهمين</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات الجمعيات</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">المبادرات</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">انشاء مبادرة</a>
+                </li>  
+              </ul>
+          </div>
+        </div> 
+        <div class="col-md-2 d-flex justify-content-end header-account-area">
+          <div class="notification-holder">
+            <a href="#"><img src="./images/bell-01.png"></a>
+          </div>
+          <div class="loggedin-holder">
+            <a href="#"><img src="./images/Avatar.png"></a>
+          </div>
+        </div>
+        </div>
+    </header>   
+    <main class="white-back">        
+      <section class="pt-5 text-center container initiative-container partner-association">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start col-md-7 mt-5">            
+            <h4>الجمعيات الشريكة</h4>           
+            <div class="card-text mb-auto description">
+              <p>تقوم الجمعيات الشريكة بالبحث الاجتماعي للتأكد من استحقاق الدعم ميدانياً عن طريق نموذج بحث اجتماعي معتمد.</p>
+              <p>لكي تستفيد من منصة جود يجب أن تكون ضمن قوائم المستحقين المسجلين في المنصة، كما يجب أن تكون مسجلاً لدى إحدى الجمعيات الأهلية الشريكة مع المنصة</p>
+            </div>           
+          </div>
+          <div class="img-holder-about col-md-5 position-relative">
+            <img class="card-img-right flex-auto first-img" src="./images/partner-association-banner1.png">           
+            <img class="card-img-right flex-auto second-img" src="./images/partner-association-banner2.png">
+            <div class="care-info left">
+              <img src="./images/partnet-association-care-icon.png">
+              <div class="text-container">
+                <span>+ 340 ألف</span>
+                <span>عدد الجمعيات</span>
+              </div>
+            </div>
+            <div class="care-info right">
+              <img src="./images/partnet-association-care-icon.png">
+              <div class="text-container">
+                <span>+ 450 ألف</span>
+                <span>عدد المسجلين</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+      <div class="album py-5 initiative-container partner">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <h4 class="pb-4">قائمة الجمعيات الشريكة</h4>
+            <div><button class="btn btn-secondary btn-lg w-auto px-5 d-flex me-auto" type="submit">تصفية</button></div>           
+          </div>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/quick-donation-logo1.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5">جمعية البر الخيرية بمحافظة الداير</p>
+                  <ul>
+                      <li>
+                        <img src="./images/donation-user-icons.png">
+                        <span>يوسف بن سالم حسن المالكي</span>
+                      </li>
+                      <li>
+                        <img src="./images/donation-call-icons.png">
+                        <span>966173409185</span>
+                      </li>
+                      <li>
+                        <img src="./images/donation-location-icons.png">
+                        <span>منطقة جازان</span>
+                      </li>
+                  </ul>
+                  <div class="d-flex justify-content-between mt-4">
+                    <div class="col-md-8"><button class="btn btn-primary btn-lg px-5 w-100" type="submit">الانتقال الى الموقع</button></div>
+                    <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/message-icon.png"></a></div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/quick-donation-logo2.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5">الجمعية الأهلية بمحافظة احد المسارحة</p>
+                  <ul>
+                    <li>
+                      <img src="./images/donation-user-icons.png">
+                      <span>يوسف بن سالم حسن المالكي</span>
+                    </li>
+                    <li>
+                      <img src="./images/donation-call-icons.png">
+                      <span>966173409185</span>
+                    </li>
+                    <li>
+                      <img src="./images/donation-location-icons.png">
+                      <span>منطقة جازان</span>
+                    </li>
+                </ul>
+                  <div class="d-flex justify-content-between mt-4">
+                    <div class="col-md-8"><button class="btn btn-primary btn-lg px-5 w-100" type="submit">الانتقال الى الموقع</button></div>
+                    <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/message-icon.png"></a></div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/quick-donation-logo3.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5">جمعية قدرة لرعاية ذوي الإعاقة</p>
+                  <ul>
+                    <li>
+                      <img src="./images/donation-user-icons.png">
+                      <span>يوسف بن سالم حسن المالكي</span>
+                    </li>
+                    <li>
+                      <img src="./images/donation-call-icons.png">
+                      <span>966173409185</span>
+                    </li>
+                    <li>
+                      <img src="./images/donation-location-icons.png">
+                      <span>منطقة جازان</span>
+                    </li>
+                </ul>
+                  <div class="d-flex justify-content-between mt-4">
+                    <div class="col-md-8"><button class="btn btn-primary btn-lg px-5 w-100" type="submit">الانتقال الى الموقع</button></div>
+                    <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/message-icon.png"></a></div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/quick-donation-logo1.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5">جمعية البر الخيرية بمحافظة الداير</p>
+                  <ul>
+                      <li>
+                        <img src="./images/donation-user-icons.png">
+                        <span>يوسف بن سالم حسن المالكي</span>
+                      </li>
+                      <li>
+                        <img src="./images/donation-call-icons.png">
+                        <span>966173409185</span>
+                      </li>
+                      <li>
+                        <img src="./images/donation-location-icons.png">
+                        <span>منطقة جازان</span>
+                      </li>
+                  </ul>
+                  <div class="d-flex justify-content-between mt-4">
+                    <div class="col-md-8"><button class="btn btn-primary btn-lg px-5 w-100" type="submit">الانتقال الى الموقع</button></div>
+                    <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/message-icon.png"></a></div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/quick-donation-logo2.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5">الجمعية الأهلية بمحافظة احد المسارحة</p>
+                  <ul>
+                    <li>
+                      <img src="./images/donation-user-icons.png">
+                      <span>يوسف بن سالم حسن المالكي</span>
+                    </li>
+                    <li>
+                      <img src="./images/donation-call-icons.png">
+                      <span>966173409185</span>
+                    </li>
+                    <li>
+                      <img src="./images/donation-location-icons.png">
+                      <span>منطقة جازان</span>
+                    </li>
+                </ul>
+                  <div class="d-flex justify-content-between mt-4">
+                    <div class="col-md-8"><button class="btn btn-primary btn-lg px-5 w-100" type="submit">الانتقال الى الموقع</button></div>
+                    <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/message-icon.png"></a></div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/quick-donation-logo3.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5">جمعية قدرة لرعاية ذوي الإعاقة</p>
+                  <ul>
+                    <li>
+                      <img src="./images/donation-user-icons.png">
+                      <span>يوسف بن سالم حسن المالكي</span>
+                    </li>
+                    <li>
+                      <img src="./images/donation-call-icons.png">
+                      <span>966173409185</span>
+                    </li>
+                    <li>
+                      <img src="./images/donation-location-icons.png">
+                      <span>منطقة جازان</span>
+                    </li>
+                </ul>
+                  <div class="d-flex justify-content-between mt-4">
+                    <div class="col-md-8"><button class="btn btn-primary btn-lg px-5 w-100" type="submit">الانتقال الى الموقع</button></div>
+                    <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/message-icon.png"></a></div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination-holder d-flex justify-content-center align-items-center w-100 mt-5">
+              <div class="next"><img src="./images/next.png"></div>            
+              <div class="pager d-flex mx-3">
+                <div class="page-no active">1</div>
+                <div class="page-no">2</div>
+                <div class="page-no">3</div>
+                <div class="page-no">4</div>
+                <div class="dotter-area">...</div>
+                <div class="page-no">37</div>
+                <div class="page-no">38</div>
+                <div class="page-no">39</div>
+                <div class="page-no">40</div>
+              </div>
+              <div class="previous"><img src="./images/previous.png"></div>
+            </div>     
+          </div>
+        </div>
+      </div>
+    </main>    
+    <footer>
+      <div class="container px-4 pt-5">        
+        <div class="row row-cols-1 row-cols-sm-4 row-cols-md-2 row-cols-lg-5">
+          <div class="col d-flex align-items-start justify-content-start">
+            <div class="text-center mt-5 footer-column mt-sm-0">
+              <img src="./images/Brand Logo Colorful.png">
+              <p class="barlow-font foot-logo-text mt-2">Joodeskan.sa</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start justify-content-center">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">مساهمات سريعة</h4>
+              <div class="footer-title-divider"></div>
+              <ul>
+                <li>سياسات المساهمة</li>
+                <li>سياسة الخصوصية</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start justify-content-center">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">عن جود الإسكان</h4>
+              <div class="footer-title-divider"></div>
+              <ul>
+                <li>من نحن</li>
+                <li>الإبلاغ عن مشكلة</li>
+                <li>الأسئلة الشائعة</li>
+                <li>تواصل معنا </li>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start justify-content-center">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">طرق الدفع المتاحة</h4>
+              <div class="footer-title-divider"></div>
+              <div class="row row-cols-2 card-images">
+                <div class="card-img-holder">
+                  <img src="./images/Group 1000006017.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start mx-sm-auto justify-content-end">
+            <div class="text-center mt-5 footer-column mt-sm-0">
+              <img src="./images/Other Brand Logo.png">
+              <p class="barlow-font foot-logo-text mt-2">Housing quality - 2023</p>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-2 mb-3"/>
+        <p class="text-center m-0 pb-3 barlow-font foot-logo-text">© 2023 Joodeskan.sa</p>
+      </div>
+    </footer>
+</body>
+</html>

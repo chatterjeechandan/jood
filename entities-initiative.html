@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Entities Initiative</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link href="css/style.css" rel="stylesheet">   
+    <link href="css/css-circular-prog-bar.css" rel="stylesheet">
+  </head>
+  <body dir="rtl"> 
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 navbar-expand">
+        <div class="container d-flex flex-row">            
+        <a href="/" class="d-flex align-items-center col-md- mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="./images/logo.png" class="logo">
+        </a>
+        <div class="desktop-nav">     
+          <div class="collapse navbar-collapse mt-lg-3" id="navbarsExample06">
+              <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المستفيدين</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المساهمين</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات الجمعيات</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">المبادرات</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">انشاء مبادرة</a>
+                </li>  
+              </ul>
+          </div>
+        </div> 
+        <div class="col-md-2 d-flex justify-content-end header-account-area">
+          <div class="notification-holder">
+            <a href="#"><img src="./images/bell-01.png"></a>
+          </div>
+          <div class="loggedin-holder">
+            <a href="#"><img src="./images/Avatar.png"></a>
+          </div>
+        </div>
+        </div>
+    </header>   
+    <main class="white-back">        
+      <section class="py-5 text-center container transparent-container initiative-container entities">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start col-md-8">            
+            <h4 class="pb-2">مبادرات الجهات</h4>           
+            <div class="card-text mb-auto advance-search-area">
+              <form class="needs-validation report-problem" novalidate="">
+                <div class="row g-3 align-items-center">
+                  <div class="col-md-4 d-flex justify-content-end">
+                    <div class="col-md-9 mb-w-100">
+                      <label for="firstName" class="form-label d-flex ms-auto">نوع المبادرة</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="">فردية</option>
+                        <option value="">فردية</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="firstName" class="form-label d-flex ms-auto">القطاع</label>
+                    <select class="form-select" id="country" required="">
+                      <option value="">فردية</option>
+                      <option value="">فردية</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="firstName" class="form-label d-flex ms-auto">الجهة</label>
+                    <select class="form-select" id="country" required="">
+                      <option value="">فردية</option>
+                      <option value="">فردية</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2 mt-5">
+                    <button class="btn btn-secondary btn-lg w-auto btn-lg px-5 advance-search-btn" type="submit">بحث</button>
+                  </div>                           
+                </div>
+              </form>            
+            </div>     
+          </div>
+        </div>
+      </section>
+      <div class="album pb-5 initiative-container">
+        <div class="container">
+          <h4 class="pb-4">مساهمتك بتصنع فرق</h4>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/STC-Logo.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5 text-center">منسوبي شركة الاتصالات السعودية</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/zain-logo.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5 text-center">منسوبي شركة زين السعودية</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/sakan-logo.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5 text-center">منسوبي مؤسسة الإسكان التنموي الأهلية</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/STC-Logo.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5 text-center">منسوبي شركة الاتصالات السعودية</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/zain-logo.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5 text-center">منسوبي شركة زين السعودية</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card inv-entity-initiative">
+                <div class="img-holder">
+                  <img src="./images/sakan-logo.png">                  
+                </div>  
+                <div class="card-body">
+                  <p class="card-text fs-5 text-center">منسوبي مؤسسة الإسكان التنموي الأهلية</p>
+                </div>
+              </div>
+            </div>
+            <div class="pagination-holder d-flex justify-content-center align-items-center w-100 mt-5">
+              <div class="next"><img src="./images/next.png"></div>            
+              <div class="pager d-flex mx-3">
+                <div class="page-no active">1</div>
+                <div class="page-no">2</div>
+                <div class="page-no">3</div>
+                <div class="page-no">4</div>
+                <div class="dotter-area">...</div>
+                <div class="page-no">37</div>
+                <div class="page-no">38</div>
+                <div class="page-no">39</div>
+                <div class="page-no">40</div>
+              </div>
+              <div class="previous"><img src="./images/previous.png"></div>
+            </div>     
+          </div>
+        </div>
+      </div>
+    </main>    
+    <footer>
+      <div class="container px-4 pt-5">        
+        <div class="row row-cols-1 row-cols-sm-4 row-cols-md-2 row-cols-lg-5">
+          <div class="col d-flex align-items-start justify-content-start">
+            <div class="text-center mt-5 footer-column mt-sm-0">
+              <img src="./images/Brand Logo Colorful.png">
+              <p class="barlow-font foot-logo-text mt-2">Joodeskan.sa</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start justify-content-center">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">مساهمات سريعة</h4>
+              <div class="footer-title-divider"></div>
+              <ul>
+                <li>سياسات المساهمة</li>
+                <li>سياسة الخصوصية</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start justify-content-center">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">عن جود الإسكان</h4>
+              <div class="footer-title-divider"></div>
+              <ul>
+                <li>من نحن</li>
+                <li>الإبلاغ عن مشكلة</li>
+                <li>الأسئلة الشائعة</li>
+                <li>تواصل معنا </li>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start justify-content-center">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">طرق الدفع المتاحة</h4>
+              <div class="footer-title-divider"></div>
+              <div class="row row-cols-2 card-images">
+                <div class="card-img-holder">
+                  <img src="./images/Group 1000006017.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start mx-sm-auto justify-content-end">
+            <div class="text-center mt-5 footer-column mt-sm-0">
+              <img src="./images/Other Brand Logo.png">
+              <p class="barlow-font foot-logo-text mt-2">Housing quality - 2023</p>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-2 mb-3"/>
+        <p class="text-center m-0 pb-3 barlow-font foot-logo-text">© 2023 Joodeskan.sa</p>
+      </div>
+    </footer>
+</body>
+</html>
