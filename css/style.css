@@ -1812,6 +1812,164 @@ form.report-problem{
     margin-top: 12%;
 }
 
+/***************Invoice**********************/
+
+.invoice-header {
+    box-shadow: none !important;
+    border:0px;
+}
+
+.invoice-back{
+    background: #fff;
+}
+
+.invoice-back .page-title{
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 118px;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #1EB78A;
+    display: inline-block;
+    margin: 0 auto;
+    display: table;
+    background: #fff;
+    z-index: 999;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.inv-header-border{
+    border: 15px solid #E4A039;
+    margin-top: -56px;
+}
+
+.inv-section h3{
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 118px;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #1EB78A;
+    text-align: revert;
+    margin-bottom: 40px;
+}
+
+.inv-row-holder{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.inv-row-holder .title{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #000000;
+    padding-left: 20px;
+}
+
+.inv-row-holder .info{
+    font-size: 34px;
+    line-height: 76px;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #000000;
+}
+
+.table-title{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #000000;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.footer-top{
+    height:70px;
+    width: 100%;
+    background: url('../images/footer-top.png');
+    background-color: #fff;
+}
+
+.invoice-back{
+    padding: 100px 0;
+    background: url(../images/invoice-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40% 40%;
+    background-color: #fff;
+}
+
+.invoice-middle-border{
+    border:5px solid #E4A039;
+}
+
+.footer-btn button {
+    background: #FA9A2A;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 82px;
+    border: 0;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 82px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px 25px;
+}
+
+.foot-text-1 {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 66px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.foot-text-2 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 66px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #FFFFFF;
+}
+
+.qr-text-1{
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #FFFFFF;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.qr-text-2{
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.qr-holder img {
+    width: 60%;
+    border: 15px solid #1EB78A;
+    border-radius: 10px;
+}
+
 /*************************Pagination****************************/
 .pagination-holder .page-no{
     padding: 10px 17px;
