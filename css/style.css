@@ -1917,7 +1917,7 @@ form.report-problem{
     line-height: 82px;
     border: 0;
     font-weight: 400;
-    font-size: 51px;
+    font-size: 43px;
     line-height: 82px;
     text-align: center;
     border-radius: 15px;
@@ -1926,7 +1926,7 @@ form.report-problem{
 
 .foot-text-1 {
     font-weight: 400;
-    font-size: 45px;
+    font-size: 43px;
     line-height: 66px;
     text-align: right;
     letter-spacing: 0.121946px;
@@ -1969,6 +1969,22 @@ form.report-problem{
     border: 15px solid #1EB78A;
     border-radius: 10px;
 }
+
+.table.invoice th{
+    font-size: 45px;
+    line-height: 66px;
+    padding-bottom: 20px;
+    border: 0;
+}
+
+.table.invoice td{
+    font-size: 34px;
+    line-height: 76px;
+    border: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
 
 /*************************Pagination****************************/
 .pagination-holder .page-no{

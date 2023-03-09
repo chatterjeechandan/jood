@@ -65,38 +65,38 @@
       <div class="invoice-middle-border"></div>
       <section class="inv-section mt-5">
         <div class="container">
-          <h3>أسهم تحفيزية</h3>
-          <div class="d-flex">
-            <div class="col-md-5">
-              <div class="table-title">اسم الجهة</div>
-              <div class="inv-row-holder img">
-                <img src="./images/invoice-img1.png" style="width: 20%;">
-                <div class="info">الهيئة العامة للأوقاف</div>
-              </div>
-              <div class="inv-row-holder img">
-                <img src="./images/invoice-img2.png" style="width: 20%;">
-                <div class="info">وزارة الشؤون البلدية والقروية</div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-2">
-              <div class="table-title">عدد الأسهم التحفيزية</div>
-              <div class="inv-row-holder mb-5">               
-                <div class="info">%10 لكل عملية اكتتاب</div>
-              </div>
-              <div class="inv-row-holder">               
-                <div class="info">%10 لكل عملية اكتتاب</div>
-              </div>
-            </div>
-            <div class="col-md-3 mt-2">
-              <div class="table-title">القيمة المالية</div>
-              <div class="inv-row-holder mb-5">               
-                <div class="info">3500 ريال</div>
-              </div>
-              <div class="inv-row-holder">               
-                <div class="info">3500 ريال</div>
-              </div>
-            </div>
-          </div>
+          <h3>أسهم تحفيزية</h3>   
+          <table class="table invoice">
+            <thead>
+              <tr>            
+                <th scope="col">اسم الجهة</th>
+                <th scope="col">عدد الأسهم التحفيزية</th>
+                <th scope="col">القيمة المالية</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>               
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img src="./images/invoice-img1.png">
+                    <div class="info">وزارة الشؤون البلدية والقروية</div>
+                  </div>
+                </td>
+                <td>%10 لكل عملية اكتتاب</td>
+                <td>3500 ريال</td>
+              </tr>
+              <tr>             
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img src="./images/invoice-img2.png">
+                    <div class="info">وزارة الشؤون البلدية والقروية</div>
+                  </div>
+                </td>
+                <td>%10 لكل عملية اكتتاب</td>
+                <td>3500 ريال</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>      
     </main>
@@ -104,7 +104,7 @@
     <footer>
       <div class="container px-4 py-5">        
         <div class="row row-cols-1 row-cols-sm-4 row-cols-md-2 row-cols-lg-5">
-          <div class="col-md-7 d-flex flex-column">
+          <div class="col-md-6 d-flex flex-column mt-5">
             <div class="footer-btn">
               <button>المبلغ الإجمالي للإكتتاب: 4000 ريال</button>
             </div>
@@ -115,7 +115,7 @@
               تقبل الله منا ومنكم صالح الأعمال
             </div>  
           </div>
-          <div class="col-md-1 d-flex"></div>
+          <div class="col-md-2 d-flex"></div>
           <div class="col-md-4 d-flex flex-column">
               <div class="qr-holder">
                 <img src="./images/invoice-qr.png"/>
