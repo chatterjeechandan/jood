@@ -1936,7 +1936,7 @@ form.report-problem{
 
 .foot-text-2 {
     font-weight: 600;
-    font-size: 45px;
+    font-size: 42px;
     line-height: 66px;
     text-align: right;
     letter-spacing: 0.121946px;
@@ -1983,6 +1983,10 @@ form.report-problem{
     border: 0;
     text-align: center;
     vertical-align: middle;
+}
+
+.invoice-footer{
+    background:#005247 !important;
 }
 
 
