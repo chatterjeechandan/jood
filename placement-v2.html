@@ -2,13 +2,16 @@
 <html lang="en">
   <head>  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>General Donation</title>
+    <title>Placement</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.6.3.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/slick.min.js"></script>
+    <link href="css/slick.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body dir="rtl" class="general-donation-container"> 
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 navbar-expand blured-header">
+  <body dir="rtl"> 
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 navbar-expand blured-header placement-header">
         <div class="container d-flex flex-row">            
         <a href="/" class="d-flex align-items-center col-md- mb-2 mb-md-0 text-dark text-decoration-none">
           <img src="./images/logo-white.png" class="logo">
@@ -64,7 +67,7 @@
         </div>
         </div>
     </header>   
-    <main>
+    <main class="white-back">
       <div class="transaction-banner d-flex ">
         <div class="marquee">
           <div class="d-flex movablediv">        
@@ -127,7 +130,8 @@
           </div>             
         </div>
       </div>
-      <section class="py-5 text-center container transparent-container donation">
+      <img src="./images/placement-banner.jpg" class="w-100 position-absolute">
+      <section class="py-5 text-center container transparent-container donation">     
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="img-holder-about col-md-8 text-end blank-area contact">
             <img src="./images/brand-logo-white-big.png" class="banner-logo">
@@ -180,6 +184,10 @@
                 <div class="col-md-12">
                   <label for="firstName" class="form-label">الاسم</label>
                   <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                </div> 
+                <div class="col-md-12">
+                  <label for="firstName" class="form-label">يرجي ادخال رقم الجول</label>
+                  <input type="text" class="form-control text-start" id="firstName" placeholder="xxxxxxxxxxx 05" value="" required="">
                 </div>  
                 <div class="col-md-6">
                   <label for="firstName" class="form-label">عدد الأسهم</label>
@@ -192,17 +200,33 @@
                 <div class="col-md-6 dimmed-back">
                   <label for="firstName" class="form-label">المبلغ</label>
                   <div class="place-input-header">
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="10" required="" readonly>
                     <a href="#" class="counter">سهم</a>
                   </div>                 
                 </div>
+                <div class="my-2">
+                  <div class="d-flex">
+                    <div class="form-check">
+                      <label class="form-check-label" for="credit"><strong>نوع الاكتتاب</strong></label>
+                    </div>
+                    <div class="form-check">
+                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                      <label class="form-check-label" for="credit">صدقة</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                      <label class="form-check-label" for="debit">زكاة</label>
+                    </div>
+                
+                  </div>
+                </div>
                 <div class="form-check custom-checkbox">                
-                  <input type="checkbox" class="form-check-input custom-control-input" id="same-address">                  
+                  <input type="checkbox" class="form-check-input custom-control-input" id="same-address" checked>                  
                   <label class="form-check-label" for="same-address">
-                    موافق على <span>شروط وأحكام</span> الاكتتاب
+                    موافق على <strong>شروط وأحكام</strong> الاكتتاب
                   </label>                  
                 </div>
-                <button class="w-100 btn btn-secondary btn-lg px-3 mt-4" type="submit">ساهم الآن</button>
+                <button class="w-auto btn btn-secondary btn-lg px-5 mt-4 mx-auto" type="submit">ساهم الآن</button>
                 </div>
             </form>
           </div>         
@@ -395,33 +419,17 @@
           </div>
         </div>
       </section>
-      <section class="album py-5 placement-middle-video-container">
-        <div class="card mb-4 box-shadow d-flex container flex-row">          
-          <div class="col-md-6 position-relative">
-            <div class="text-container">
-              <h3>آخر الأخبار</h3>
-              <h4>الناس للناس وجود بالخير تساعدنا </h4>
-              <p class="note">برنامج جود الخير في شهر الخير</p>
-              <p class="date">32 يناير 2020</p>
-              <p class="description">“تم إطلاق برنامج دعم المنازل المتضررة في عام 2020 بالعمل مع شركاء جود وتم ترميم مايقارب 370 منزلًا. منذ ذلك الحين قمنا بتمويل منازل إضافية في وبذلك وصلنا إلى 500 منزل في القرى التي تأوي العائلات الأكثر ضعفًا.”</p>
-              <p class="author">-عمّار الوهيبي</p>
-            </div>
-          </div>
-          <div class="col-md-6 position-relative img-gradient">
-            <img src="./images/placement-single-video.png" class="w-100 video-placeholder active">
-            <img src="./images/play-button.png" class="play-button">
-          </div>
-          <img src="./images/curved-big.png" class="video-container-bottom-img">
-        </div>
-      </section>
       <section class="album py-5 placement-middle-image-container v2">       
         <div class="container">
-          <h3 class="mb-3">مدونة جود</h3>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3>مدونة جود</h3>
+            <div><a href="javascript:void(0)"><img src="./images/previous.png"></a></div>           
+          </div>
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow"> 
                 <div class="position-relative">
-                  <img src="./images/placement-3coloumn-img1.png">
+                  <img src="./images/placement-3coloumn-img1.png" class="w-100">
                 </div> 
                 <div class="text-container">                  
                   <p class="mt-2">نص عشوائي</p>
@@ -431,7 +439,7 @@
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <div class="position-relative img-gradient">
-                  <img src="./images/placement-3coloumn-img2.png">
+                  <img src="./images/placement-3coloumn-img2.png" class="w-100">
                   <img src="./images/play-button.png" class="play-button">
                 </div> 
                 <div class="text-container">                  
@@ -442,7 +450,7 @@
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <div class="position-relative">
-                  <img src="./images/placement-3coloumn-img3.png">
+                  <img src="./images/placement-3coloumn-img3.png" class="w-100">
                 </div> 
                 <div class="text-container">                  
                   <p class="mt-2">نص عشوائي</p>
@@ -457,13 +465,67 @@
         <div class="container">
           <h3>جــود الإسكان أقرب </h3>
           <h4>خيارك للخير أقرب ، تابع آخر الأخبار عبر تويتر</h4>
-          <div class="row">
+          <div class="row mt-4">
             <div class="col-md-6">
-              <img src="./images/Tweet.png" class="w-100">
+              <div class="card twitter">
+                <div class="logo-account-area d-flex align-items-center">
+                  <div class="logo ms-2">
+                    <img src="./images/tweet-logo.png">
+                  </div>
+                  <div class="account">
+                    <div class="name"><span>جود الإسكان</span><img src="./images/tweet-badge.png"></div>
+                    <div class="user-name">@joodeskan</div>
+                  </div>
+                </div>
+                <div class="twitter-body">عطاءات الخير تنقل دِفْء مشاعرك <br/>تبرع بجود يفتح باب مسكنهم في هذا الشتاء</div>
+                <div class="date-area">فبراير 1, 2022 · 10:45 PM</div>
+                <div class="seperator"></div>
+                <div class="re-twit-area">
+                  <div class="item"><span>19</span>إعادة تغريد</div>
+                  <div class="item"><span>6</span>تغريدة اقتباس</div>
+                  <div class="item"><span>45</span>اعجابًا</div>
+                </div>              
+              </div>              
             </div>
             <div class="col-md-6">
-              <img src="./images/Tweet.png" class="w-100">
-            </div>            
+              <div class="card twitter">
+                <div class="logo-account-area d-flex align-items-center">
+                  <div class="logo ms-2">
+                    <img src="./images/tweet-logo.png">
+                  </div>
+                  <div class="account">
+                    <div class="name"><span>جود الإسكان</span><img src="./images/tweet-badge.png"></div>
+                    <div class="user-name">@joodeskan</div>
+                  </div>
+                </div>
+                <div class="twitter-body">عطاءات الخير تنقل دِفْء مشاعرك <br/>تبرع بجود يفتح باب مسكنهم في هذا الشتاء</div>
+                <div class="date-area">فبراير 1, 2022 · 10:45 PM</div>
+                <div class="seperator"></div>
+                <div class="re-twit-area">
+                  <div class="item"><span>19</span>إعادة تغريد</div>
+                  <div class="item"><span>6</span>تغريدة اقتباس</div>
+                  <div class="item"><span>45</span>اعجابًا</div>
+                </div>              
+              </div> 
+          </div>          
+          </div>
+        </div>
+      </section>
+      <section class="partner-logo pb-5">
+        <div class="container">         
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3>جود مستمرة بدعم من </h3>
+            <div><a href="javascript:void(0)"><img src="./images/previous.png"></a></div>           
+          </div>
+          <div class="slick-slider placement" dir="ltr">
+            <div><img src="./images/placement-caro1.png"></div>
+            <div><img src="./images/placement-caro2.png"></div>
+            <div><img src="./images/placement-caro3.png"></div>
+            <div><img src="./images/placement-caro4.png"></div>
+            <div><img src="./images/placement-caro1.png"></div>
+            <div><img src="./images/placement-caro2.png"></div>
+            <div><img src="./images/placement-caro3.png"></div>
+            <div><img src="./images/placement-caro4.png"></div>
           </div>
         </div>
       </section>
@@ -553,4 +615,11 @@ new Chart("myChart", {
 }
   }
 });
+
+$(".slick-slider").slick({
+   slidesToShow: 4,
+   infinite:true,
+   slidesToScroll: 3
+  });
+ 
 </script>

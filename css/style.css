@@ -1332,10 +1332,10 @@ form.report-problem{
 
 /*********************Donation**************************/
 
-.general-donation-container{
-    background: url(../images/donation-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+.placement-header {
+    background: url(../images/placement-banner.jpg);
+    background-position-x: right;
+    background-position-y: inherit;
 }
 
 .placement-form {
@@ -1352,7 +1352,7 @@ form.report-problem{
 }
 
 .container.donation{
-    margin-top: 3%;
+    margin-top: 11%;
 }
 
 .container.donation .text-container{
@@ -1398,7 +1398,7 @@ form.report-problem{
     background: #FA9A2A;
 }
 .container.donation .category-count-container{
-    margin-top: 30px;
+    margin-top: 170px;
     width: 87%;
 }
 .container.donation .category-count-container .category-count{
@@ -1651,7 +1651,7 @@ form.report-problem{
     line-height: 66px;
     text-align: right;
     letter-spacing: 0.121946px;
-    color: #3D9474;
+    color: #005247;
 }
 
 .placement-middle-image-container.v2 .text-container{
@@ -1689,7 +1689,7 @@ form.report-problem{
     flex: none;
     order: 0;
     flex-grow: 0;
-    text-align: center;
+    text-align: right;
 }
 
 .last-section-placement h4{
@@ -1702,9 +1702,120 @@ form.report-problem{
     flex: none;
     order: 1;
     flex-grow: 0;
-    text-align: center;
+    text-align: right;
     margin-bottom: 20px;
 }
+
+.card.twitter {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border: 0;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    height: max-content;
+}
+
+.card.twitter .name span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #14171A;
+    margin-left: 7px;
+}
+
+.card.twitter .user-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #657786;
+    text-align: right;
+}
+
+.card.twitter .twitter-body {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+    color: #14171A;
+    margin: 15px 0;
+}
+
+.card.twitter .date-area {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #657786;
+    margin: 10px 0 20px;
+}
+
+.card.twitter .seperator {
+    border-top: 2px solid #E1E8ED;
+    height: 2px;
+}
+
+.card.twitter .re-twit-area {
+    display: flex;
+    margin-top: 15px;
+}
+
+.card.twitter .re-twit-area .item {
+    margin-left: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #657786;
+}
+
+.card.twitter .re-twit-area .item span{
+    margin-left: 10px;
+}
+
+.partner-logo h3{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 82px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #3D9474;
+}
+
+/*************Slick Slider************************/
+  
+.slick-next, .slick-prev {
+    position: absolute;
+    display: block;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -10px\9;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: 0;
+    background: 0 0;
+}
+
+.slick-next {
+    right: -25px;
+    background: url('../images/slick-next.png');
+}
+
+.slick-prev {
+    left: -25px;
+    background: url('../images/slick-previous.png');
+}
+
+.placement .slick-slide img {
+    margin: 0 auto;
+}
+
 
 /*************Stepper******************/
 
