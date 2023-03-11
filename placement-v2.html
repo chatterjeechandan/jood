@@ -74,7 +74,13 @@
           </div>             
         </div>
       </div>
-      <img src="./images/placement-banner.jpg" class="w-100 position-absolute">
+      <img src="./images/placement-banner.jpg" class="w-100 position-absolute d-none d-sm-block">
+      <div class="mobile-placement-banner d-block d-sm-none" dir="ltr">
+        <img src="./images/placement-banner-mobile.jpg">
+        <img src="./images/placement-banner-mobile.jpg">
+        <img src="./images/placement-banner-mobile.jpg">
+        <img src="./images/placement-banner-mobile.jpg">
+      </div>
       <section class="py-5 text-center container transparent-container donation">     
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="img-holder-about col-md-8 text-end blank-area contact">
@@ -89,7 +95,7 @@
               <div class="dot"></div>
               <div class="dot"></div>              
             </div>
-            <div class="category-count-container d-flex">
+            <div class="category-count-container d-flex flex-wrap">
               <div class="category-count ms-2">
                 <img src="./images/donation-family-icon.png">
                 <div class="title-count">931</div>
@@ -176,7 +182,7 @@
           </div>         
         </div>
       </section>
-      <section class="album py-5 donation placement-graph-area-container">        
+      <section class="album py-4 py-md-5 donation placement-graph-area-container">        
         <div class="container">
           <h4>سجلات الإكتتابات</h4>
           <div class="row justify-content-between">
@@ -369,10 +375,10 @@
             <h3>مدونة جود</h3>
             <div><a href="javascript:void(0)"><img src="./images/previous.png"></a></div>           
           </div>
-          <div class="row">
+          <div class="row mobile-slider" dir="ltr">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow"> 
-                <div class="position-relative">
+                <div class="position-relative img-holder">
                   <img src="./images/placement-3coloumn-img1.png" class="w-100">
                 </div> 
                 <div class="text-container">                  
@@ -382,7 +388,7 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <div class="position-relative img-gradient">
+                <div class="position-relative img-gradient img-holder">
                   <img src="./images/placement-3coloumn-img2.png" class="w-100">
                   <img src="./images/play-button.png" class="play-button">
                 </div> 
@@ -393,7 +399,7 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <div class="position-relative">
+                <div class="position-relative img-holder">
                   <img src="./images/placement-3coloumn-img3.png" class="w-100">
                 </div> 
                 <div class="text-container">                  
@@ -405,7 +411,7 @@
           <div class="curved-img"><img src="./images/curved-small.png"></div>
         </div>
       </section>
-      <section class="album py-5 last-section-placement text-center">
+      <section class="album pb-5 pt-md-5 last-section-placement text-center">
         <div class="container">
           <h3>جــود الإسكان أقرب </h3>
           <h4>خيارك للخير أقرب ، تابع آخر الأخبار عبر تويتر</h4>
@@ -563,7 +569,40 @@ new Chart("myChart", {
 $(".slick-slider").slick({
    slidesToShow: 4,
    infinite:true,
-   slidesToScroll: 3
+   slidesToScroll: 3,
+   responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
+
+
+$(document).ready(function() {
+  if ($(window).width() < 576) {
+    $(".mobile-slider").slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: true,
+      variableWidth: true
+    });
+    $(".mobile-placement-banner").slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1
+    });    
+  }
+});
+
+
  
 </script>
