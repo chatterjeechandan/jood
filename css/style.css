@@ -2376,6 +2376,121 @@ form.report-problem{
     margin-left: 6px;
 }
 
+/*************Success Modal*****************/
+
+.success-payment-dialog .modal-dialog{
+    max-width: 420px;
+}
+
+.success-payment-dialog h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    align-items: center;
+    letter-spacing: 0.121946px;
+    color: #1EB78A;
+    margin: 40px auto;
+}
+
+.success-payment-dialog .amount-holder-area p, .success-payment-dialog .type-holder p{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 14px;
+    display: flex;
+    letter-spacing: 0.121946px;
+    color: #1EB78A;
+    text-align: center;
+    justify-content: center;
+}
+
+.success-payment-dialog .amount-holder-area .amount-holder {
+    padding: 10px 20px;
+    gap: 10px;
+    left: 8px;
+    top: 39px;
+    background: #59B492;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.success-payment-dialog .amount-holder-area .amount-holder span {
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 5px;
+}
+
+.success-payment-dialog .type-holder .date{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #363636;
+    margin-bottom: 5px !important;
+}
+
+.success-payment-dialog .type-holder .time{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #6B7280;
+}
+
+.success-payment-dialog .card-details table td {
+    text-align: right;
+    vertical-align: middle;
+    width: 50%;
+    padding-bottom: 20px;
+    color: #9CA3AF;
+    font-size: 18px;
+}
+
+.success-payment-dialog .card-details table td .green-p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #1EB78A;
+    margin: 0;
+}
+
+.success-payment-dialog .card-details h5{
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #1F2937;
+    border-bottom: 2px dotted #1F2937;
+    padding-bottom: 13px;
+    margin-bottom: 20px;
+}
+
+.success-payment-dialog .download-area p {
+    font-size: 17px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #9CA3AF;
+    margin: 0;
+}
+
+.success-payment-dialog .modal-body {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
 /****************************Mobile Query**********************************/
 
 
@@ -2648,7 +2763,7 @@ form.report-problem{
         position: absolute;
         right: 20px;
         bottom: 40px;
-        z-index: 99;
+        z-index: 1;
     }
 
     .mobile-placement-banner ul.slick-dots li button {

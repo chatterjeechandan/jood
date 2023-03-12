@@ -177,7 +177,7 @@
                     موافق على <strong>شروط وأحكام</strong> الاكتتاب
                   </label>                  
                 </div>
-                <button class="w-auto btn btn-secondary btn-lg px-5 mt-4 mx-auto" type="submit">ساهم الآن</button>
+                <button class="w-auto btn btn-secondary btn-lg px-5 mt-4 mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">ساهم الآن</button>
                 </div>
             </form>
           </div>         
@@ -573,6 +573,59 @@
         <p class="text-center m-0 pb-3 barlow-font foot-logo-text">© 2023 Joodeskan.sa</p>
       </div>
     </footer>
+
+    <!-- Success Modal -->
+    <div class="modal fade success-payment-dialog" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img src="./images/succ-popup-tick.png">
+            <h3>تم الإكتتاب بنجاح</h3>
+            <div class="d-flex amount-holder-area justify-content-between col-md-10 mx-auto">
+              <div>
+                <p>مبلغ المساهمة </p>
+                <div class="amount-holder">1000<span>ريال</span></div>
+              </div>
+              <div>
+                <p>عدد الاسهم</p>
+                <div class="amount-holder">30<span>سهم</span></div>
+              </div>
+            </div>
+            <div class="d-flex type-holder justify-content-between col-md-10 mx-auto mt-4">
+              <div>
+                <p>طريقة الدفع</p>
+                <img src="./images/apple-pay-payment.png">
+              </div>
+              <div>
+                <p>الوقت والتاريخ</p>
+                <p class="date m-0">28/2/2023</p>
+                <p class="time">9:34 PM</p>
+              </div>
+            </div>
+            <div class="card-details col-md-11 mx-auto mt-4">
+              <h5 class="text-end">تفاصيل الاكتتاب</h5>
+              <table>
+                <tbody><tr>
+                  <td>نوع الاكتتاب </td>
+                  <td><p class="green-p">صدقة</p></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>الرقم المرجعي للتبرع</td>
+                  <td><p class="green-p">48568225522</p></td>
+                  <td><a href="#"><img src="./images/copy-button.png"></a></td>
+                </tr>
+              </tbody></table>
+            </div>
+            <div class="d-flex justify-content-between mt-4 col-md-8 mx-auto align-items-center download-area">
+              <p>تحميل شهادة الإكتتاب</p>
+              <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/download-button.png"></a></div>                    
+            </div>
+            <button class="w-auto btn btn-secondary btn-lg px-5 mt-4 mx-auto" type="button">+ اكتتب مرة اخرى</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
 
