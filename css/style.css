@@ -703,6 +703,8 @@ form.report-problem{
     border: 0;
     padding: 20px;
     border-radius: 20px;
+    height: 96%;
+    position: relative;
 }
 
 .transaction-table td{    
@@ -775,6 +777,10 @@ form.report-problem{
     display: flex;
     justify-content: center;
     margin: 14px 0 5px 0;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
 }
 
 .graph-button{
@@ -2131,7 +2137,10 @@ form.report-problem{
 }
 
 #myChart{
-    margin-top: 12%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 /***************Invoice**********************/
@@ -2577,6 +2586,8 @@ form.report-problem{
     }
     .placement-graph-area-container  .graph-button-area{
         flex-wrap: wrap;
+        position: relative;
+        bottom: -14%;
     }
     .placement-graph-area-container .graph-button{
         margin: 0 6px;
@@ -2730,6 +2741,9 @@ form.report-problem{
     }
     .table.invoice td .d-flex{
         align-items: end !important;
+    }
+    #myChart {
+        position: relative;
     }
 }
 
