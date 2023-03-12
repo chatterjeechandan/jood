@@ -2700,7 +2700,7 @@ form.report-problem{
 
     .table.invoice td .title{        
         font-size: 18px;
-        line-height: 24px;
+        line-height: 18px;
     }
 
     .table.invoice td .info{
@@ -2722,6 +2722,9 @@ form.report-problem{
     }
     .table.invoice img{
         width: 50%;
+    }
+    .donation.placement-graph-area-container .transaction-table td{
+        padding: 10px 0 !important;
     }
 }
 
