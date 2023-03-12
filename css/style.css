@@ -2711,6 +2711,7 @@ form.report-problem{
     .table.invoice th{
         font-size: 20px;
         line-height: 20px;
+        vertical-align: bottom;
     }
     .table.invoice td .info{
         font-size: 18px;
@@ -2719,12 +2720,16 @@ form.report-problem{
     .table.invoice td{
         font-size: 18px;
         line-height: 20px;
+        vertical-align: bottom;
     }
     .table.invoice img{
         width: 50%;
     }
     .donation.placement-graph-area-container .transaction-table td{
         padding: 10px 0 !important;
+    }
+    .table.invoice td .d-flex{
+        align-items: end !important;
     }
 }
 
