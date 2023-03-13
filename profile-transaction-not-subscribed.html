@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Profile Dashboard First Time</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.6.3.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -138,13 +139,153 @@
             </div>
           </div>
           <div class="col-md-8 text-end">
-            <div class="profile-dashboard position-relative h-100">
-              <div class="text-container">
-                <p class="green-text">لايوجد لديك تبرعات </p>
-                <h3>ساهم الآن للحالات المختارة</h3>
-                <p class="black-text">تقدر تضيف حالات أخرى لقائمة مفضلاتك
-                  وتساهم أكثر بالخير</p>
-                <button class="graph-button">تصفح الحالات</button>
+            <div class="profile-dashboard position-relative">
+              <div class="profile-dashboard-count">
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon1.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">100</div>
+                    <p>إجمالي مبلغ التبرعات</p>
+                  </div>
+                </div>
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon2.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">05</div>
+                    <p>عدد مرات التبرع</p>
+                  </div>
+                </div>
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon3.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">05</div>
+                    <p>عدد المبادرات</p>
+                  </div>
+                </div>
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon4.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">20</div>
+                    <p>عدد المستفيدون</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 profile-transaction-area mt-5">
+              <div class="d-flex justify-content-between">
+                <h3>نشاطات التبرع</h3>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item ms-4" role="presentation">
+                    <button class="nav-link chart" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><div class="icon"></div>رسم بياني</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link table active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><div class="icon"></div>سجل عمليات</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="d-flex justify-content-between chart-control my-3">
+                    <div class="d-flex flex-column">
+                      <div class="body">إجمالي التبرع</div>
+                      <div class="cost">48574.21 دولارًا</div>
+                    </div>
+                    <div>
+                      <select class="form-select" id="country" required="">
+                        <option value="">هذا العام</option>
+                        <option>هذا العام</option>
+                      </select>
+                    </div>
+                  </div>
+                  <canvas id="myChart" style="width:100%;max-width:100%" dir="rtl"></canvas>
+                </div>
+                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <table class="table table-striped mt-4">
+                    <thead>
+                      <tr>
+                        <th scope="col">عنوان التبرع</th>
+                        <th scope="col">تاريخ</th>
+                        <th scope="col">نوع التبرع</th>
+                        <th scope="col">فاتورة</th>
+                        <th scope="col">مبلغ التبرع</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./images/profile-table-icon1.png">
+                            سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                          </div>
+                        </td>
+                        <td>31/12/2022</td>
+                        <td>التبرع العادي</td>
+                        <td>JoE9398383</td>
+                        <td>10ريال</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./images/profile-table-icon2.png">
+                            سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                          </div>
+                        </td>
+                        <td>31/12/2022</td>
+                        <td>التبرع العادي</td>
+                        <td>JoE9398383</td>
+                        <td>10ريال</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./images/profile-table-icon1.png">
+                            سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                          </div>
+                        </td>
+                        <td>31/12/2022</td>
+                        <td>التبرع العادي</td>
+                        <td>JoE9398383</td>
+                        <td>10ريال</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./images/profile-table-icon2.png">
+                            سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                          </div>
+                        </td>
+                        <td>31/12/2022</td>
+                        <td>التبرع العادي</td>
+                        <td>JoE9398383</td>
+                        <td>10ريال</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./images/profile-table-icon1.png">
+                            سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                          </div>
+                        </td>
+                        <td>31/12/2022</td>
+                        <td>التبرع العادي</td>
+                        <td>JoE9398383</td>
+                        <td>10ريال</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./images/profile-table-icon2.png">
+                            سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                          </div>
+                        </td>
+                        <td>31/12/2022</td>
+                        <td>التبرع العادي</td>
+                        <td>JoE9398383</td>
+                        <td>10ريال</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -288,3 +429,36 @@
     </footer>
 </body>
 </html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script>
+var xValues = [0,10,20,30,40,50,60,120,130,140,150];
+var yValues = [27,37,21,31,49,31,20,28,7,42,21,20,12,25,18];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      backgroundColor: "#1EB78A",
+      borderColor: "#1EB78A",
+      data: yValues,
+      lineTension: 0.4
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 0, max:60}}],
+    },
+    tooltips: {
+  rtl: true,
+  bodyFontSize: 10,
+  titleFontSize: 11,
+}
+  }
+});
+
+</script>

@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Profile Dashboard First Time</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.6.3.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -85,13 +86,13 @@
               </div>
               <div class="menu-area mt-3">
                 <ul>
-                  <li class="active">
+                  <li >
                     <a href="#">
                       <div class="icon"><img src="./images/profile-sidebar-icon1.png"></div>
                       <div class="link">لوحة التحكم</div>
                     </a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="#">
                       <div class="icon"><img src="./images/profile-sidebar-icon2.png"></div>
                       <div class="link">ملفي</div>
@@ -138,99 +139,131 @@
             </div>
           </div>
           <div class="col-md-8 text-end">
-            <div class="profile-dashboard position-relative h-100">
-              <div class="text-container">
-                <p class="green-text">لايوجد لديك تبرعات </p>
-                <h3>ساهم الآن للحالات المختارة</h3>
-                <p class="black-text">تقدر تضيف حالات أخرى لقائمة مفضلاتك
-                  وتساهم أكثر بالخير</p>
-                <button class="graph-button">تصفح الحالات</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="join-365 gray-back"></div> 
-      <section class="py-5 text-center container transparent-container join-365 profile">        
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start col-md-6 text-end">
-            <div class="text-container">          
-              <h3>خدمة جود 365</h3>
-              <p>تتيح لك التيرع بجميع ايام السنة للعائلات التي تحتاج<br>مساعدتكوتنظر وجودك ف خطوة واحدة</p>
-            </div>
-            <div class="accordion w-100" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <div class="profile-accordion-index-round"><div class="profile-accordion-index-count">1</div></div>
-                    ما هي خدمة جود 365؟
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    جود الإسكان هي إحدى مبادرات مؤسسة الإسكان التنموي الأهلية والتي تهدف إلى إشراك المجتمع أفرادا ومنظمات في العطاء الخيري السكني من خلال منصة إلكترونية تحقق الشفافية والدقة والاحترافية في تقديم المساهمة الخيرية .
+            <div class="profile-dashboard position-relative">
+              <div class="profile-dashboard-count">
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon1.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">100</div>
+                    <p>إجمالي مبلغ التبرعات</p>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="profile-accordion-index-round"><div class="profile-accordion-index-count">2</div></div>
-                    ما تسعي اليه جود ؟
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    جود الإسكان هي إحدى مبادرات مؤسسة الإسكان التنموي الأهلية والتي تهدف إلى إشراك المجتمع أفرادا ومنظمات في العطاء الخيري السكني من خلال منصة إلكترونية تحقق الشفافية والدقة والاحترافية في تقديم المساهمة الخيرية .
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon2.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">05</div>
+                    <p>عدد مرات التبرع</p>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <div class="profile-accordion-index-round"><div class="profile-accordion-index-count">3</div></div>
-                    ما هي اهداف جود الاستراتيجية
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    جود الإسكان هي إحدى مبادرات مؤسسة الإسكان التنموي الأهلية والتي تهدف إلى إشراك المجتمع أفرادا ومنظمات في العطاء الخيري السكني من خلال منصة إلكترونية تحقق الشفافية والدقة والاحترافية في تقديم المساهمة الخيرية .
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon3.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">05</div>
+                    <p>عدد المبادرات</p>
                   </div>
                 </div>
-              </div>
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon4.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">20</div>
+                    <p>عدد المستفيدون</p>
+                  </div>
+                </div>
+              </div>            
             </div>
-          </div>
-          <div class="card-body d-flex flex-column align-items-end col-md-4 text-end position-relative">
-            <form class="needs-validation placement-form col-md-10" novalidate="">
-              <div class="placement-form-header d-flex">
-                <div class="img ms-3"><img src="./images/calender-icon.png"></div>
-                <h3><strong>أيامك السعيدة</strong></h3>
-              </div>
-              <p class="sub-header">	ساهم يوميًا بأي مبلغ تختاره لمدة </br>365 يومًا
-              </p>       
-              <div class="row g-3">
-                <div class="col-md-12">
-                  <label for="firstName" class="form-label not-bold">حدد مبلغ التبرع اليومي</label>
-                  <div class="place-input-header">
-                    <div class="graph-button-area">
-                      <button class="graph-button active me-0">1 ريال</button>
-                      <button class="graph-button">5 ريال</button>
-                      <button class="graph-button">10 ريال</button>
+            <div class="w-100 my-profile-area mt-5">
+              <form class="needs-validation my-profile" novalidate="">
+                <h4 class="mb-3">ملفي الشخصي</h4>
+                <div class="card-text mb-auto d-flex report-problem">             
+                  <div class="row g-3">                    
+                    <div class="col-sm-6">
+                      <label for="firstName" class="form-label">الاسم الكامل</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    </div>     
+                    <div class="col-sm-6">
+                      <label for="lastName" class="form-label">اسم المستخدم</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    </div> 
+                    <div class="col-sm-6">
+                      <label for="firstName" class="form-label">البريد الإلكتروني </label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    </div>     
+                    <div class="col-sm-6">
+                      <label for="lastName" class="form-label">الجوال</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    </div>      
+                    <div class="my-3">
+                      <label for="lastName" class="form-label">الجنس</label>
+                      <div class="d-flex">
+                        <div class="form-check">
+                          <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                          <label class="form-check-label" for="credit">ذكر</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                          <label class="form-check-label" for="debit">انثى</label>
+                        </div>
+                      </div>
+                    </div>      
+                    <div class="col-md-6">
+                      <label for="country" class="form-label">المنطقة</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="">اختر المنطقة</option>
+                        <option>اختر المنطقة</option>
+                      </select>
+                    </div>      
+                    <div class="col-md-6">
+                      <label for="country" class="form-label">المنطقة</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="">اختر المنطقة</option>
+                        <option>اختر المنطقة</option>
+                      </select>
+                    </div>                 
+                  </div>   
+                </div>
+                <h4 class="mt-5 mb-3">تفضيلاتي</h4>
+                <div class="card-text mb-auto d-flex report-problem">                  
+                  <div class="row g-3">                    
+                    <div class="col-sm-12">
+                      <label for="lastName" class="form-label">أفضل دعم للحالات التالية</label>
+                      <select id="country" required="" class="form-select chosen-select" multiple tabindex="4">
+                        <option value="" selected>نص</option>
+                        <option value="" selected>نص</option>
+                        <option value="" selected>نص</option>
+                        <option value="">نص</option>                      
+                      </select>                    
                     </div>
-                  </div>                 
-                </div>                
-                <div class="col-md-12">
-                  <label for="firstName" class="form-label">خصص مبلغ التبرع اليومي</label>
-                  <div class="place-input-header">
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                    <a href="#" class="counter">سهم</a>
-                  </div>                 
+                    <div class="col-sm-12">
+                      <label for="lastName" class="form-label">أفضل حالة في المنطقة</label>
+                      <select id="country" required="" class="form-select chosen-select" multiple tabindex="4">
+                        <option value="" selected>منطقة مكة المكرمة</option>
+                        <option value="" selected>منطقة الحدود الشمالية</option>
+                        <option value="" selected>منطقة عسير</option>
+                        <option value="">منطقة عسير</option>                      
+                      </select>                     
+                    </div>
+                    <div class="col-sm-12">
+                      <label for="lastName" class="form-label">أفضل مساهمة للحالات التالية</label>
+                      <select id="country" required="" class="form-select chosen-select" multiple tabindex="4">
+                        <option value="" selected>معاقين</option>
+                        <option value="" selected>مرضى السكر</option>
+                        <option value="" selected>ذوي الدخل المنخفض</option>
+                        <option value="">ذوي الدخل المنخفض</option>                      
+                      </select>                    
+                    </div>
+                    <div class="col-md-12">
+                      <label for="country" class="form-label">أفضل تذكير لي هو التبرع في من</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="">نص مساعد</option>
+                        <option>نص مساعد</option>
+                      </select>
+                    </div> 
+                  </div> 
                 </div>
-                <button class="btn btn-secondary btn-lg px-5 mt-4 mx-auto" type="submit">اشترك  الآن</button>
-                </div>
-            </form>
-            <img src="./images/clip-vector.png" class="join-365-img">
-          </div> 
+                <button class="btn btn-secondary btn-lg w-auto px-5 d-flex my-5" type="submit">ارسل</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>    
@@ -288,3 +321,12 @@
     </footer>
 </body>
 </html>
+
+
+<script src="js/chosen.jquery.min.js"></script>
+<link href="css/chosen.min.css" rel="stylesheet">
+<script>
+$(document).ready(function(){
+  $(".chosen-select").chosen({max_selected_options: 5});   
+});
+</script>

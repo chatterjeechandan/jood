@@ -13,7 +13,7 @@
     font-family: 'Barlow';
 }
 body{
-    background: #EFEFEF;
+    /*background: #EFEFEF;*/
     color: #1F2937;
 }
 a{
@@ -2039,6 +2039,40 @@ form.report-problem{
 .join-365.profile.transparent-container .placement-form .btn-secondary {
     margin-top: 45px !important;
 }
+
+.profile-dashboard-count {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+.profile-dashboard-count .each-item {
+    display: flex;
+    align-items: center;
+}
+
+.profile-dashboard-count .count {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #1F2937;
+}
+.profile-dashboard-count p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+    color: #1F2937;
+    margin: 0;
+}
+
+
+
+
+
+
 /*************Stepper******************/
 
 .stepper-container h4{
@@ -2141,12 +2175,170 @@ form.report-problem{
     padding-bottom: 48px !important;
 }
 
-#myChart{
+.placement-graph-area-container #myChart{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+.profile-transaction-area .nav-tabs .nav-link {
+    color: #000 !important;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 20px;
+    display: flex;
+    border: 1px solid #3D9474;
+    border-bottom: 1px solid #3D9474;
+}
+
+.profile-transaction-area .nav-tabs .nav-link .icon {
+    height: 24px;
+    width: 24px;
+    margin-left: 6px;
+}
+
+.profile-transaction-area .nav-tabs .nav-link.active {
+    background: #3D9474;
+    color: #fff !important;
+    border-bottom: 1px solid #3D9474 !important;
+}
+
+.profile-transaction-area .nav-tabs .nav-link.chart .icon {
+    background: url('../images/profile-dashboard-chart.png');
+    background-repeat: no-repeat;
+}
+
+.profile-transaction-area .nav-tabs .nav-link.chart.active .icon {
+    background: url('../images/profile-dashboard-chart-selected.png');
+    background-repeat: no-repeat;
+}
+
+.profile-transaction-area .nav-tabs .nav-link.table .icon {
+    background: url('../images/profile-dashboard-table.png');
+    background-repeat: no-repeat;
+}
+
+.profile-transaction-area .nav-tabs .nav-link.table.active .icon {
+    background: url('../images/profile-dashboard-table-selected.png');
+    background-repeat: no-repeat;
+}
+
+.profile-transaction-area h3 {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #3D9474;
+}
+
+.profile-transaction-area .body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #64748B;
+}
+
+.profile-transaction-area .cost {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #0F172A;
+}
+
+.profile-transaction-area select {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.121946px;
+    color: #64748B;
+    padding-left: 30px;
+}
+
+.profile-transaction-area table td {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #6B7280;
+}
+
+.profile-transaction-area table td img{
+    margin-left: 10px;
+}
+
+.profile-transaction-area table th {
+    background: #3D9474;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 20px;
+}
+
+.profile-transaction-area table th:first-child {
+    border-radius: 0 10px 0 0;
+}
+.profile-transaction-area table th:last-child {
+    border-radius: 10px 0 0 0;
+}
+
+.profile-transaction-area table tr td:first-child {
+    border-right: 1px solid #DEE2E6;
+}
+.profile-transaction-area table tr td:last-child {
+    border-left: 1px solid #DEE2E6;
+}
+
+form.my-profile .card-text {
+    border: 1px solid #e8e8e8;
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.chosen-container {
+    width:100% !important;
+}
+
+.my-profile-area h4{
+    color:#3D9474;
+}
+
+.profile.faq-container .about-us-first-section-description {
+    width: 100%;
+}
+
+.padd-btn{    
+    background: #fff;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    color: #3D9474;
+    padding: 5px 45px 8px;
+    border-radius: 150px;
+    margin-left: 30px;
+    font-size: 30px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.padd-btn span{
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.padd-btn.active{
+    background: #3D9474;
+    color: #fff;
+}
+
+
 
 /***************Invoice**********************/
 
