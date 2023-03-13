@@ -777,10 +777,13 @@ form.report-problem{
     display: flex;
     justify-content: center;
     margin: 14px 0 5px 0;
-    position: absolute;
     bottom: 10%;
     left: 0;
     right: 0;
+}
+
+.placement-graph-area-container .graph-button-area{
+    position: absolute;
 }
 
 .graph-button{
@@ -1230,13 +1233,13 @@ form.report-problem{
 }
 
 .container.partner-association .care-info{
-    width: auto;
     border: 1px solid #D1D5DB;
     display: inline-block;
     position: absolute;
     padding: 14px 25px;
     border-radius: 20px;    
     background: #fff;
+    height: max-content;
 }
 
 .container.partner-association .care-info img{
@@ -1309,26 +1312,26 @@ form.report-problem{
 }
 
 .container.benifit .care-info{
-    width: auto;
+    /* width: auto; */
     border: 1px solid #D1D5DB;
     display: inline-block;
     position: absolute;
     padding: 5px 13px;
     border-radius: 14px;
     background: #fff;
-    bottom: -15px;
-    right: 15px;
+    bottom: -27px;
+    right: -25px;
 }
 
 .container.benifit .care-info img{
     position: absolute;
-    top: -23px;
-    left: -33px;
+    top: -29px;
+    left: -24px;
+    right: auto;
 }
 
 .container.benifit .care-info .text-container{
     font-size: 12px;
-    width: 187px;
 }
 
 .container.benifit .logo-container{
@@ -1339,12 +1342,14 @@ form.report-problem{
 
 .container.benifit.last-area .first-img{
     float: right;
-    z-index: 9999;
+    z-index: 9;
     position: relative;
 }
 
 .container.benifit.last-area .second-img{
     margin-top: -100px;
+    z-index: 99;
+    position: relative;
 }
 
 .container.benifit.last-area .report-problem-placeholder-img{
@@ -1458,7 +1463,7 @@ form.report-problem{
     padding: 50px 25px 35px;
 }
 
-.container.donation .placement-form .cross-icon{
+.cross-icon{
     position: absolute;
     left: 10px;
     top: 10px;
