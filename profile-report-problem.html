@@ -2,11 +2,12 @@
 <html lang="en">
   <head>  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>Profile Dashboard First Time</title>
+    <title>Profile My Donation</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/css-circular-prog-bar.css" rel="stylesheet">
   </head>
   <body dir="rtl"> 
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 navbar-expand">
@@ -70,12 +71,11 @@
     </header>   
     <main class="white-back">  
       <section class="profile-banner container pt-5">
-        <image src="./images/profile-banner.png" class="w-100 d-none d-sm-block"></image>
-        <image src="./images/profile-banner-mobile.png" class="w-100 d-block d-sm-none"></image>
+        <image src="./images/profile-banner.png" class="w-100"></image>
       </section>
       <section class="py-b text-center container profile transparent-container">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start col-md-4 text-end pe-0 py-0 profile-sidebar-container">
+          <div class="card-body d-flex flex-column align-items-start col-md-4 text-end pe-0 py-0">
             <div class="profile-sidenav">
               <div class="account-area mt-4">
                 <div class="logged-in d-flex justify-content-between align-items-center">
@@ -85,13 +85,9 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-sidebar-expand text-center d-none d-sm-none">
-                <p>ملفي الشخصي</p>
-                <a href="javascript:void(0)"><img src="./images/sidebar-expand.png"></a>
-              </div>
               <div class="menu-area mt-3">
                 <ul>
-                  <li class="active">
+                  <li >
                     <a href="#">
                       <div class="icon"><img src="./images/profile-sidebar-icon1.png"></div>
                       <div class="link">لوحة التحكم</div>
@@ -121,7 +117,7 @@
                       <div class="link">مبادراتي</div>
                     </a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="#">
                       <div class="icon"><img src="./images/profile-sidebar-icon6.png"></div>
                       <div class="link">الشكاوى والمراسلات</div>
@@ -141,107 +137,104 @@
                   </li>
                 </ul>
               </div>
-              <div class="mobile-sidebar-collaspe d-block d-sm-none">
-                <a href="javascript:void(0)"><img src="./images/sidebar-collaspe.png"></a>
-              </div>
             </div>
           </div>
           <div class="col-md-8 text-end">
-            <div class="profile-dashboard position-relative h-100">
-              <div class="text-container">
-                <p class="green-text">لايوجد لديك تبرعات </p>
-                <h3>ساهم الآن للحالات المختارة</h3>
-                <p class="black-text">تقدر تضيف حالات أخرى لقائمة مفضلاتك
-                  وتساهم أكثر بالخير</p>
-                <button class="graph-button">تصفح الحالات</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="join-365 gray-back profile"></div> 
-      <section class="py-5 text-center container transparent-container join-365 profile">        
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start col-md-6 text-end">
-            <div class="text-container">          
-              <h3>خدمة جود 365</h3>
-              <p>تتيح لك التيرع بجميع ايام السنة للعائلات التي تحتاج<br>مساعدتكوتنظر وجودك ف خطوة واحدة</p>
-            </div>
-            <div class="accordion w-100" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <div class="profile-accordion-index-round"><div class="profile-accordion-index-count">1</div></div>
-                    ما هي خدمة جود 365؟
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    جود الإسكان هي إحدى مبادرات مؤسسة الإسكان التنموي الأهلية والتي تهدف إلى إشراك المجتمع أفرادا ومنظمات في العطاء الخيري السكني من خلال منصة إلكترونية تحقق الشفافية والدقة والاحترافية في تقديم المساهمة الخيرية .
+            <div class="profile-dashboard position-relative">
+              <div class="profile-dashboard-count">
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon1.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">100</div>
+                    <p>إجمالي مبلغ التبرعات</p>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="profile-accordion-index-round"><div class="profile-accordion-index-count">2</div></div>
-                    ما تسعي اليه جود ؟
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    جود الإسكان هي إحدى مبادرات مؤسسة الإسكان التنموي الأهلية والتي تهدف إلى إشراك المجتمع أفرادا ومنظمات في العطاء الخيري السكني من خلال منصة إلكترونية تحقق الشفافية والدقة والاحترافية في تقديم المساهمة الخيرية .
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon2.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">05</div>
+                    <p>عدد مرات التبرع</p>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <div class="profile-accordion-index-round"><div class="profile-accordion-index-count">3</div></div>
-                    ما هي اهداف جود الاستراتيجية
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    جود الإسكان هي إحدى مبادرات مؤسسة الإسكان التنموي الأهلية والتي تهدف إلى إشراك المجتمع أفرادا ومنظمات في العطاء الخيري السكني من خلال منصة إلكترونية تحقق الشفافية والدقة والاحترافية في تقديم المساهمة الخيرية .
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon3.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">05</div>
+                    <p>عدد المبادرات</p>
+                  </div>
+                </div>
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon4.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">20</div>
+                    <p>عدد المستفيدون</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card-body d-flex flex-column align-items-end col-md-4 text-end position-relative">
-            <form class="needs-validation placement-form col-md-10" novalidate="">
-              <div class="placement-form-header d-flex">
-                <div class="img ms-3"><img src="./images/calender-icon.png"></div>
-                <h3><strong>أيامك السعيدة</strong></h3>
-              </div>
-              <p class="sub-header">	ساهم يوميًا بأي مبلغ تختاره لمدة </br>365 يومًا
-              </p>       
-              <div class="row g-3">
-                <div class="col-md-12">
-                  <label for="firstName" class="form-label not-bold">حدد مبلغ التبرع اليومي</label>
-                  <div class="place-input-header">
-                    <div class="graph-button-area">
-                      <button class="graph-button active me-0">1 ريال</button>
-                      <button class="graph-button">5 ريال</button>
-                      <button class="graph-button">10 ريال</button>
+            <div class="profile-report-problem">
+              <h3 class="mt-5 my-3">الشكاوى والمراسلات</h3>
+              <div class="card-text mb-auto d-flex report-problem mt-">
+                <form class="needs-validation profile-report-problem" novalidate="">
+                  <div class="row g-3">
+                    <div class="col-sm-12">
+                      <label for="firstName" class="form-label">الاسم الكامل</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="محمد علي احمد" value="" required="">
                     </div>
-                  </div>                 
-                </div>                
-                <div class="col-md-12">
-                  <label for="firstName" class="form-label">خصص مبلغ التبرع اليومي</label>
-                  <div class="place-input-header">
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                    <a href="#" class="counter">سهم</a>
-                  </div>                 
+                    <div class="col-sm-6">
+                      <label for="firstName" class="form-label">البريد الإلكتروني </label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    </div>     
+                    <div class="col-sm-6">
+                      <label for="lastName" class="form-label">الجوال</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    </div>      
+                    <div class="my-3">
+                      <label for="lastName" class="form-label">الجوال</label>
+                      <div class="d-flex">
+                        <div class="form-check">
+                          <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                          <label class="form-check-label" for="credit">مشاكل دفع</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                          <label class="form-check-label" for="debit">مشاكل فنية</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                          <label class="form-check-label" for="paypal">مشاكل كرت الإهداء</label>
+                        </div>
+                      </div>
+                    </div>      
+                    <div class="col-md-12">
+                      <label for="country" class="form-label">نوع المشكلة</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="">أدخلت مبلغ خاطىء</option>
+                        <option>أدخلت مبلغ خاطىء</option>
+                      </select>
+                    </div>      
+                    <div class="col-sm-12">
+                      <label for="firstName" class="form-label">المبلغ الذي تم دفعه</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="محمد علي احمد" value="" required="">
+                    </div>
+                    <div class="col-sm-12">
+                      <label for="firstName" class="form-label">المرفقات</label>
+                      <div class="drag-image">
+                        <button type="button"><img src="./images/upload-icon.png"></button>                      
+                        <p>سحب وإفلات أو تصفح الملفات للتحميل</p>
+                        <input type="file" hidden="">
+                      </div>
+                      <span class="drag-image-info">*الحد الأقصى 4 MB</span>
+                    </div>
+                  <button class="btn btn-secondary btn-lg w-auto px-5" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">ارسل</button>
                 </div>
-                <button class="btn btn-secondary btn-lg px-5 mt-4 mx-auto" type="submit">اشترك  الآن</button>
-                </div>
-            </form>
-            <img src="./images/clip-vector.png" class="join-365-img">
-          </div> 
+                </form>    
+              <img class="card-img-right flex-auto d-none d-md-block first-img report-problem-placeholder-img" src="./images/clip-vector.png">       
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </section>    
     </main>    
     <footer>
       <div class="container px-4 pt-5">        
@@ -295,19 +288,82 @@
         <p class="text-center m-0 pb-3 barlow-font foot-logo-text">© 2023 Joodeskan.sa</p>
       </div>
     </footer>
+
+    <div class="modal fade success-report-dialog" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <a href="javascript:void(0)" class="cross-icon" data-bs-dismiss="modal"><img src="./images/popup-cross.png"></a>
+            <div class="d-flex flex-column">
+              <img src="./images/curved-small.png">
+              <img src="./images/succ-popup-tick.png">
+            </div>
+            <h4>تم تقديم الشكوى</h4>
+            <p>شكرًا لك، تم بنجاح تقديم الشكوى للفريق المختص</p>
+            <p class="green-p">48568225522 <a href="#"><img src="./images/copy-button.png"></a></p>
+            <button class="w-auto btn btn-secondary btn-lg px-5 my-4 mx-auto" type="button">رجوع إلى لوحة القيادة</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
+
+
+
 <script>
-$(document).ready(function(){
-  $(".mobile-sidebar-collaspe a").click(function(){    
-    $(".profile-sidenav .menu-area").hide();
-    $(".mobile-sidebar-expand").removeClass('d-none').addClass('d-block');
-    $(".mobile-sidebar-collaspe").removeClass('d-block').addClass('d-none');
-  });
-  $(".mobile-sidebar-expand a").click(function(){    
-    $(".profile-sidenav .menu-area").show();
-    $(".mobile-sidebar-collaspe").removeClass('d-none').addClass('d-block');
-    $(".mobile-sidebar-expand").removeClass('d-block').addClass('d-none');
-  });
+
+const dropArea = document.querySelector(".drag-image"),
+dragText = dropArea.querySelector("h6"),
+button = dropArea.querySelector("button"),
+input = dropArea.querySelector("input");
+let file; 
+
+button.onclick = ()=>{
+  input.click(); 
+}
+
+input.addEventListener("change", function(){
+ 
+  file = this.files[0];
+  dropArea.classList.add("active");
+  viewfile();
 });
+
+dropArea.addEventListener("dragover", (event)=>{
+  event.preventDefault();
+  dropArea.classList.add("active");
+  dragText.textContent = "Release to Upload File";
+});
+
+
+dropArea.addEventListener("dragleave", ()=>{
+  dropArea.classList.remove("active");
+  dragText.textContent = "Drag & Drop to Upload File";
+}); 
+
+dropArea.addEventListener("drop", (event)=>{
+  event.preventDefault(); 
+   
+  file = event.dataTransfer.files[0];
+  viewfile(); 
+});
+
+function viewfile(){
+  let fileType = file.type; 
+  let validExtensions = ["image/jpeg", "image/jpg", "image/png"];
+  if(validExtensions.includes(fileType)){ 
+    let fileReader = new FileReader(); 
+    fileReader.onload = ()=>{
+      let fileURL = fileReader.result; 
+       let imgTag = `<img src="${fileURL}" alt="image">`;
+      dropArea.innerHTML = imgTag; 
+    }
+    fileReader.readAsDataURL(file);
+  }else{
+    alert("This is not an Image File!");
+    dropArea.classList.remove("active");
+    dragText.textContent = "Drag & Drop to Upload File";
+  }
+}
 </script>

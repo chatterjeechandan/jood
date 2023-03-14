@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en">
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Profile My Donation</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/css-circular-prog-bar.css" rel="stylesheet">
+  </head>
+  <body dir="rtl"> 
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 navbar-expand">
+        <div class="container d-flex flex-row">            
+        <a href="/" class="d-flex align-items-center col-md- mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="./images/logo.png" class="logo">
+        </a>
+        <div class="desktop-nav">    
+          <div class="collapse navbar-collapse mt-lg-3" id="navbarsExample06">
+              <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المستفيدين</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات المساهمين</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">خدمات الجمعيات</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">المبادرات</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">انشاء مبادرة</a>
+                </li>  
+              </ul>
+          </div>
+        </div>
+        <div class="col-md-2 d-flex justify-content-end header-account-area">
+          <div class="notification-holder">
+            <a href="#"><img src="./images/bell-01.png"></a>
+          </div>
+          <div class="loggedin-holder">
+            <a href="#"><img src="./images/Avatar.png"></a>
+          </div>
+        </div>
+        </div>
+    </header>   
+    <main class="white-back">  
+      <section class="profile-banner container pt-5">
+        <image src="./images/profile-banner.png" class="w-100"></image>
+      </section>
+      <section class="py-b text-center container profile transparent-container">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start col-md-4 text-end pe-0 py-0">
+            <div class="profile-sidenav">
+              <div class="account-area mt-4">
+                <div class="logged-in d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="./images/Avatar.png" class="sidebar-avatar">
+                    <div class="user-name pe-2">مرحبًا،<span>محمد</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-area mt-3">
+                <ul>
+                  <li >
+                    <a href="#">
+                      <div class="icon"><img src="./images/profile-sidebar-icon1.png"></div>
+                      <div class="link">لوحة التحكم</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon"><img src="./images/profile-sidebar-icon2.png"></div>
+                      <div class="link">ملفي</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon"><img src="./images/profile-sidebar-icon3.png"></div>
+                      <div class="link">خدمة 365</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon"><img src="./images/profile-sidebar-icon4.png"></div>
+                      <div class="link">مساهماتي</div>
+                    </a>
+                  </li>
+                  <li class="active">
+                    <a href="#">
+                      <div class="icon"><img src="./images/profile-sidebar-icon5.png"></div>
+                      <div class="link">مبادراتي</div>
+                      <div class="notification">5</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon"><img src="./images/profile-sidebar-icon6.png"></div>
+                      <div class="link">الشكاوى والمراسلات</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon"><img src="./images/profile-sidebar-icon7.png"></div>
+                      <div class="link">كل الإشعارات</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon"><img src="./images/profile-sidebar-icon8.png"></div>
+                      <div class="link">تسجيل خروج</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 text-end">
+            <div class="profile-dashboard position-relative">
+              <div class="profile-dashboard-count">
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon1.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">100</div>
+                    <p>إجمالي مبلغ التبرعات</p>
+                  </div>
+                </div>
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon2.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">05</div>
+                    <p>عدد مرات التبرع</p>
+                  </div>
+                </div>
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon3.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">05</div>
+                    <p>عدد المبادرات</p>
+                  </div>
+                </div>
+                <div class="each-item">
+                  <div><img src="./images/profile-dasboard-icon4.png"></div>
+                  <div class="d-flex flex-column me-2">
+                    <div class="count">20</div>
+                    <p>عدد المستفيدون</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 initiative-container profile">
+              <div class="d-flex mb-3 align-items-center">
+                <h5>مبادرات الخدمة</h5>
+                <button class="btn btn-secondary btn-lg w-auto px-5 d-flex me-auto" type="submit"> إنشاء مبادرة جديدة <img src="./images/Icon Add.png" class="mt-1 me-2"></button>
+              </div>
+              <div class="d-flex mb-5">
+                <ul class="nav nav-tabs p-0 d-flex justify-content-between w-100 my-profile-initiative" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="opencase-tab" data-bs-toggle="tab" data-bs-target="#opencase" type="button" role="tab" aria-controls="opencase" aria-selected="true"><span>5</span>حالة بانتظار جودكم</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="closedcase-tab" data-bs-toggle="tab" data-bs-target="#closedcase" type="button" role="tab" aria-controls="closedcase" aria-selected="false"><span>5</span>حالة اكتملت بجودكم</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="closedcasenew-tab" data-bs-toggle="tab" data-bs-target="#closedcasenew" type="button" role="tab" aria-controls="closedcase" aria-selected="false"><span>5</span> تنتهي</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="opencase" role="tabpanel" aria-labelledby="opencase-tab">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-2 title"><strong>سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder"></div>
+                          <div class="amount black d-flex">7300<span>ريال</span></div>
+                          <div class="date">هدف الصندوق</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-2 title"><strong>سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder"></div>
+                          <div class="amount black d-flex">7300<span>ريال</span></div>
+                          <div class="date">هدف الصندوق</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-2 title"><strong>سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder"></div>
+                          <div class="amount black d-flex">7300<span>ريال</span></div>
+                          <div class="date">هدف الصندوق</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-2 title"><strong>سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder"></div>
+                          <div class="amount black d-flex">7300<span>ريال</span></div>
+                          <div class="date">هدف الصندوق</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-2 title"><strong>سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder"></div>
+                          <div class="amount black d-flex">7300<span>ريال</span></div>
+                          <div class="date">هدف الصندوق</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-2 title"><strong>سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder"></div>
+                          <div class="amount black d-flex">7300<span>ريال</span></div>
+                          <div class="date">هدف الصندوق</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination-holder d-flex justify-content-start align-items-center w-100 mt-5">
+                      <div class="next"><img src="./images/next.png"></div>            
+                      <div class="pager d-flex mx-3">
+                        <div class="page-no active">1</div>
+                        <div class="page-no">2</div>
+                        <div class="page-no">3</div>
+                        <div class="page-no">4</div>
+                        <div class="dotter-area">...</div>
+                        <div class="page-no">37</div>
+                        <div class="page-no">38</div>
+                        <div class="page-no">39</div>
+                        <div class="page-no">40</div>
+                      </div>
+                      <div class="previous"><img src="./images/previous.png"></div>
+                    </div>     
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="closedcase" role="tabpanel" aria-labelledby="closedcase-tab">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton real">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>تم جمع</strong></p>
+                              <p class="text-center second-text"><strong>3000.00 ر.س</strong></p>
+                            </div>
+                            <div class="d-flex mx-2 process-cicle-holder">
+                              <div class="progress-circle below10 p10">
+                                <span>10%</span>
+                                <div class="left-half-clipper">
+                                   <div class="first50-bar"></div>
+                                   <div class="value-bar"></div>
+                                </div>
+                             </div>
+                            </div>
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>الهدف</strong></p>
+                              <p class="text-center second-text"><strong>3400.00 ر.س</strong></p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between mt-4">
+                            <div class="col-md-8"><button class="btn btn-primary btn-lg  w-100" type="submit">ساهم الآن</button></div>
+                            <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/upload-button-icon.png"></a></div>                    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton real">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>تم جمع</strong></p>
+                              <p class="text-center second-text"><strong>3000.00 ر.س</strong></p>
+                            </div>
+                            <div class="d-flex mx-2 process-cicle-holder">
+                              <div class="progress-circle below10 p10">
+                                <span>10%</span>
+                                <div class="left-half-clipper">
+                                   <div class="first50-bar"></div>
+                                   <div class="value-bar"></div>
+                                </div>
+                             </div>
+                            </div>
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>الهدف</strong></p>
+                              <p class="text-center second-text"><strong>3400.00 ر.س</strong></p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between mt-4">
+                            <div class="col-md-8"><button class="btn btn-primary btn-lg  w-100" type="submit">ساهم الآن</button></div>
+                            <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/upload-button-icon.png"></a></div>                    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton real">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>تم جمع</strong></p>
+                              <p class="text-center second-text"><strong>3000.00 ر.س</strong></p>
+                            </div>
+                            <div class="d-flex mx-2 process-cicle-holder">
+                              <div class="progress-circle below10 p10">
+                                <span>10%</span>
+                                <div class="left-half-clipper">
+                                   <div class="first50-bar"></div>
+                                   <div class="value-bar"></div>
+                                </div>
+                             </div>
+                            </div>
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>الهدف</strong></p>
+                              <p class="text-center second-text"><strong>3400.00 ر.س</strong></p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between mt-4">
+                            <div class="col-md-8"><button class="btn btn-primary btn-lg  w-100" type="submit">ساهم الآن</button></div>
+                            <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/upload-button-icon.png"></a></div>                    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton real">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>تم جمع</strong></p>
+                              <p class="text-center second-text"><strong>3000.00 ر.س</strong></p>
+                            </div>
+                            <div class="d-flex mx-2 process-cicle-holder">
+                              <div class="progress-circle below10 p10">
+                                <span>10%</span>
+                                <div class="left-half-clipper">
+                                   <div class="first50-bar"></div>
+                                   <div class="value-bar"></div>
+                                </div>
+                             </div>
+                            </div>
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>الهدف</strong></p>
+                              <p class="text-center second-text"><strong>3400.00 ر.س</strong></p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between mt-4">
+                            <div class="col-md-8"><button class="btn btn-primary btn-lg  w-100" type="submit">ساهم الآن</button></div>
+                            <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/upload-button-icon.png"></a></div>                    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton real">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>تم جمع</strong></p>
+                              <p class="text-center second-text"><strong>3000.00 ر.س</strong></p>
+                            </div>
+                            <div class="d-flex mx-2 process-cicle-holder">
+                              <div class="progress-circle below10 p10">
+                                <span>10%</span>
+                                <div class="left-half-clipper">
+                                   <div class="first50-bar"></div>
+                                   <div class="value-bar"></div>
+                                </div>
+                             </div>
+                            </div>
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>الهدف</strong></p>
+                              <p class="text-center second-text"><strong>3400.00 ر.س</strong></p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between mt-4">
+                            <div class="col-md-8"><button class="btn btn-primary btn-lg  w-100" type="submit">ساهم الآن</button></div>
+                            <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/upload-button-icon.png"></a></div>                    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                          <div class="top-img">
+                            <div class="greenbutton real">دعم شراء سكن</div>
+                          </div>
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>تم جمع</strong></p>
+                              <p class="text-center second-text"><strong>3000.00 ر.س</strong></p>
+                            </div>
+                            <div class="d-flex mx-2 process-cicle-holder">
+                              <div class="progress-circle below10 p10">
+                                <span>10%</span>
+                                <div class="left-half-clipper">
+                                   <div class="first50-bar"></div>
+                                   <div class="value-bar"></div>
+                                </div>
+                             </div>
+                            </div>
+                            <div class="d-flex mx-1 flex-column side-info">
+                              <p class="text-center mb-1 first-text"><strong>الهدف</strong></p>
+                              <p class="text-center second-text"><strong>3400.00 ر.س</strong></p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between mt-4">
+                            <div class="col-md-8"><button class="btn btn-primary btn-lg  w-100" type="submit">ساهم الآن</button></div>
+                            <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/upload-button-icon.png"></a></div>                    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination-holder d-flex justify-content-start align-items-center w-100 mt-5">
+                      <div class="next"><img src="./images/next.png"></div>            
+                      <div class="pager d-flex mx-3">
+                        <div class="page-no active">1</div>
+                        <div class="page-no">2</div>
+                        <div class="page-no">3</div>
+                        <div class="page-no">4</div>
+                        <div class="dotter-area">...</div>
+                        <div class="page-no">37</div>
+                        <div class="page-no">38</div>
+                        <div class="page-no">39</div>
+                        <div class="page-no">40</div>
+                      </div>
+                      <div class="previous"><img src="./images/previous.png"></div>
+                    </div>     
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="closedcasenew" role="tabpanel" aria-labelledby="closedcasenew-tab">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <img src="./images/profile-initiative-completed-batch.png">
+                          </div>
+                          <div class="d-flex justify-content-center mt-4">
+                            <p class="card-text mb-4 fs-5 completed-case text-center"><strong>هذه الحالة اكتملت بوجودك 
+                              شكرا لك</strong></p>                                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <img src="./images/profile-initiative-completed-batch.png">
+                          </div>
+                          <div class="d-flex justify-content-center mt-4">
+                            <p class="card-text mb-4 fs-5 completed-case text-center"><strong>هذه الحالة اكتملت بوجودك 
+                              شكرا لك</strong></p>                                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <img src="./images/profile-initiative-completed-batch.png">
+                          </div>
+                          <div class="d-flex justify-content-center mt-4">
+                            <p class="card-text mb-4 fs-5 completed-case text-center"><strong>هذه الحالة اكتملت بوجودك 
+                              شكرا لك</strong></p>                                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <img src="./images/profile-initiative-completed-batch.png">
+                          </div>
+                          <div class="d-flex justify-content-center mt-4">
+                            <p class="card-text mb-4 fs-5 completed-case text-center"><strong>هذه الحالة اكتملت بوجودك 
+                              شكرا لك</strong></p>                                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <img src="./images/profile-initiative-completed-batch.png">
+                          </div>
+                          <div class="d-flex justify-content-center mt-4">
+                            <p class="card-text mb-4 fs-5 completed-case text-center"><strong>هذه الحالة اكتملت بوجودك 
+                              شكرا لك</strong></p>                                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col completed">
+                      <div class="card inv-initiative">
+                        <div class="position-relative">
+                          <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                        </div>  
+                        <div class="card-body">
+                          <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                          <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                            <div class="d-flex ms-2">
+                              <div><img src="./images/compas-icon.png"></div>
+                              <div class="small-icon-text">الرياض</div>
+                            </div>
+                            <div class="d-flex mx-1">
+                              <div><img src="./images/two-user-icon.png"></div>
+                              <div class="small-icon-text">11 فرد </div>
+                            </div>
+                            <div class="d-flex me-2">
+                              <div><img src="./images/graph-icon.png"></div>
+                              <div class="small-icon-text">معاق</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-4">
+                            <img src="./images/profile-initiative-completed-batch.png">
+                          </div>
+                          <div class="d-flex justify-content-center mt-4">
+                            <p class="card-text mb-4 fs-5 completed-case text-center"><strong>هذه الحالة اكتملت بوجودك 
+                              شكرا لك</strong></p>                                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination-holder d-flex justify-content-start align-items-center w-100 mt-5">
+                      <div class="next"><img src="./images/next.png"></div>            
+                      <div class="pager d-flex mx-3">
+                        <div class="page-no active">1</div>
+                        <div class="page-no">2</div>
+                        <div class="page-no">3</div>
+                        <div class="page-no">4</div>
+                        <div class="dotter-area">...</div>
+                        <div class="page-no">37</div>
+                        <div class="page-no">38</div>
+                        <div class="page-no">39</div>
+                        <div class="page-no">40</div>
+                      </div>
+                      <div class="previous"><img src="./images/previous.png"></div>
+                    </div>     
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>    
+    </main>    
+    <footer>
+      <div class="container px-4 pt-5">        
+        <div class="row row-cols-1 row-cols-sm-4 row-cols-md-2 row-cols-lg-5">
+          <div class="col d-flex align-items-start justify-content-start">
+            <div class="text-center mt-5 footer-column mt-sm-0">
+              <img src="./images/Brand Logo Colorful.png">
+              <p class="barlow-font foot-logo-text mt-2">Joodeskan.sa</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start justify-content-center">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">مساهمات سريعة</h4>
+              <div class="footer-title-divider"></div>
+              <ul>
+                <li>سياسات المساهمة</li>
+                <li>سياسة الخصوصية</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start justify-content-center">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">عن جود الإسكان</h4>
+              <div class="footer-title-divider"></div>
+              <ul>
+                <li>من نحن</li>
+                <li>الإبلاغ عن مشكلة</li>
+                <li>الأسئلة الشائعة</li>
+                <li>تواصل معنا </li>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start justify-content-center">
+            <div class="footer-item footer-column">
+              <h4 class="fw-bold mb-0">طرق الدفع المتاحة</h4>
+              <div class="footer-title-divider"></div>
+              <div class="row row-cols-2 card-images">
+                <div class="card-img-holder">
+                  <img src="./images/Group 1000006017.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start mx-sm-auto justify-content-end">
+            <div class="text-center mt-5 footer-column mt-sm-0">
+              <img src="./images/Other Brand Logo.png">
+              <p class="barlow-font foot-logo-text mt-2">Housing quality - 2023</p>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-2 mb-3"/>
+        <p class="text-center m-0 pb-3 barlow-font foot-logo-text">© 2023 Joodeskan.sa</p>
+      </div>
+    </footer>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script>
+var xValues = [0,10,20,30,40,50,60,120,130,140,150];
+var yValues = [27,37,21,31,49,31,20,28,7,42,21,20,12,25,18];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      backgroundColor: "#1EB78A",
+      borderColor: "#1EB78A",
+      data: yValues,
+      lineTension: 0.4
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 0, max:60}}],
+    },
+    tooltips: {
+  rtl: true,
+  bodyFontSize: 10,
+  titleFontSize: 11,
+}
+  }
+});
+
+
+  const dropArea = document.querySelector(".drag-image"),
+dragText = dropArea.querySelector("h6"),
+button = dropArea.querySelector("button"),
+input = dropArea.querySelector("input");
+let file; 
+
+button.onclick = ()=>{
+  input.click(); 
+}
+
+input.addEventListener("change", function(){
+ 
+  file = this.files[0];
+  dropArea.classList.add("active");
+  viewfile();
+});
+
+dropArea.addEventListener("dragover", (event)=>{
+  event.preventDefault();
+  dropArea.classList.add("active");
+  dragText.textContent = "Release to Upload File";
+});
+
+
+dropArea.addEventListener("dragleave", ()=>{
+  dropArea.classList.remove("active");
+  dragText.textContent = "Drag & Drop to Upload File";
+}); 
+
+dropArea.addEventListener("drop", (event)=>{
+  event.preventDefault(); 
+   
+  file = event.dataTransfer.files[0];
+  viewfile(); 
+});
+
+function viewfile(){
+  let fileType = file.type; 
+  let validExtensions = ["image/jpeg", "image/jpg", "image/png"];
+  if(validExtensions.includes(fileType)){ 
+    let fileReader = new FileReader(); 
+    fileReader.onload = ()=>{
+      let fileURL = fileReader.result; 
+       let imgTag = `<img src="${fileURL}" alt="image">`;
+      dropArea.innerHTML = imgTag; 
+    }
+    fileReader.readAsDataURL(file);
+  }else{
+    alert("This is not an Image File!");
+    dropArea.classList.remove("active");
+    dragText.textContent = "Drag & Drop to Upload File";
+  }
+}
+</script>

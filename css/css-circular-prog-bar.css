@@ -73,11 +73,22 @@
    border: 0.45em solid #FA9A2A;
 }
 
+.red .value-bar {
+   border: 0.45em solid red;
+}
+
 .progress-circle.over50.olive .value-bar{
    border: 0.45em solid #3D9474;
 }
 .progress-circle.over50.olive .first50-bar {
    background-color: #3D9474;
+}
+
+.amber .value-bar {
+   border: 0.45em solid #FA9A2A;
+}
+.amber .first50-bar {
+   background-color: #FA9A2A !important;
 }
 
 /* Progress bar filling the whole right half for values above 50% */

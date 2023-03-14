@@ -473,6 +473,13 @@ form.report-problem{
     z-index: 9999;
 }
 
+form.profile-report-problem{
+    border: 1px solid #e8e8e8;
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+    z-index: 999;
+}
 .drag-image{
     border: 3px dashed #e8e8e8;
     height: 170px;
@@ -1042,6 +1049,92 @@ form.report-problem{
     color: #3D9474;
 }
 
+.notification {
+    position: absolute;
+    left: 15%;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background: #FA9A2A;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.profile-report-problem h3{
+    color: #3D9474;
+}
+
+.profile-notification ul {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #EBEBEB;
+    border-radius: 15px;
+}
+
+.profile-notification ul li{
+    padding: 12px 10px 20px;
+    margin-bottom: 20px;
+}
+.profile-notification ul li:last-child{
+    margin-bottom: 0px;
+}
+
+.profile-notification ul li a{
+    position: relative;
+    margin-right: -10px;;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.profile-notification ul li a img{
+    height: max-content;
+}
+
+.profile-notification ul li a .title-desc{
+    width: 70%;
+    margin-right: 12px;
+}
+
+.profile-notification ul li a .title-desc .title{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #1F2937;
+}
+
+.profile-notification ul li a .title-desc .description{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #6B7280;
+    margin-top: 10px;
+}
+
+.profile-notification ul li a .date{
+    position: absolute;
+    left: -3%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.121946px;
+    color: #6B7280;
+}
+
+.profile-notification ul li:hover{
+    background: rgba(61, 148, 116, 0.05);
+}
+
+.profile-notification ul li:hover a{
+    border-right: 4px solid #FA9A2A;
+}
+
 /******************Create Initiative*************************/
 
 .initiative-container .card{
@@ -1192,9 +1285,10 @@ form.report-problem{
    color: #3D9474;
 }
 
-.col.completed{
+.col.completed .position-relative{
     opacity: 0.6;
 }
+
 
 /******************Entities Initiative***********************/
 
@@ -1884,6 +1978,7 @@ form.report-problem{
     display: flex;
     align-items: center;
     color: #1F2937;
+    position: relative;
 }
 
 .profile-sidenav .menu-area li a .icon{
@@ -2338,7 +2433,268 @@ form.my-profile .card-text {
     color: #fff;
 }
 
+.initiative-container.profile-dark-gray {
+    margin-top: -10%;
+}
 
+.join-365.gray-back.profile-dark-gray {
+    margin-top: 200px;
+}
+
+.initiative-container.profile-dark-gray  .card.inv-initiative {
+    width:auto !important;
+    background: #fff;
+}
+
+.border-btn {
+    border: 1px solid #3D9474;
+    padding: 10px 25px;
+    border-radius: 150px;
+    color: #3D9474;
+    cursor: pointer;
+}
+
+.border-btn:hover {
+    border: 1px solid #3D9474;
+    color: #fff;
+    background: #3D9474;
+}
+
+.transparent-container.join-365.profile .join-365-img{
+    bottom: 50px;
+    right: -20%;
+}
+
+.profile-dashboard-upload-area .card-text{
+    margin: 0 !important;
+    margin-bottom: 0 !important;
+    width: 100% !important;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 30px 12px 10px;
+}
+
+.profile-dashboard-upload-area .progress-circle {
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.profile-dashboard-upload-area .progress-circle span.small{
+    font-size: 10px;
+    width: 100px;
+    margin-top: 33px;
+    text-align: center;
+    margin-right: 9px;
+}
+
+.profile-dashboard-upload-area .progress-circle span{
+    margin-top: 33px;
+    margin-right: 20px;
+    color: #59B492;
+}
+
+.upload-process-items p{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.upload-process-items p.green{
+    color: #59B492;
+}
+
+.profile-dashboard-upload-area .drag-image{
+    height: 100%;
+}
+
+.profile-dashboard-upload-area .drag-image p{
+    color: #59B492;
+}
+
+.initiative-container.profile .card{
+    width: auto !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.initiative-container.profile h3{
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #3D9474;
+}
+
+.initiative-container.profile .top-img img{
+    position: absolute;
+    top: 10px;
+    width: 15%;
+    right: 24px;
+}
+
+.initiative-container.profile .top-img .greenbutton {
+    font-size: 12px;
+    background: #E3606F;
+}
+
+.initiative-container.profile .title {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.initiative-container.profile .amount {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+.initiative-container.profile .amount .count{
+    font-size: 24px;
+    line-height: 35px;
+    color: #3D9474;
+    margin-right: 5px;
+    margin-top: -10px;
+}
+
+.initiative-container.profile .amount .count span{
+    font-size: 12px;
+    line-height: 18px;
+    color: #374151;
+}
+
+.initiative-container.profile .side-info .first-text {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.initiative-container.profile .side-info .second-text {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.initiative-container.profile .date {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #9CA3AF;
+}
+
+.profile-transaction-area .underline-anchor {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #59B492;
+}
+
+.profile-dashboard-upload-area.donation .card-text{
+    background: #3D9474;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.profile-dashboard-upload-area.donation .card-text h5{
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.121946px;
+    color: #FFFFFF;
+}
+
+.profile-dashboard-upload-area.donation .card-text .details{
+    background: #fff;
+    width: 70%;
+    margin: 10px auto;
+    padding: 0 15px 10px;
+    border-radius: 12px;
+}
+
+.profile-dashboard-upload-area.donation .card-text .details img{
+    margin-top: -45px;
+}
+
+.profile-dashboard-upload-area.donation .card-text .details .date{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #9CA3AF;
+    margin-top: 10px;
+}
+
+.profile-dashboard-upload-area.donation .card-text .details .amount{
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 34px;
+    letter-spacing: 0.121946px;
+    color: #3D9474;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-dashboard-upload-area.donation .card-text .details .amount span{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #374151;
+}
+
+.profile-dashboard-upload-area.donation .card-text .details .description{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.121946px;
+    color: #111111;
+}
+
+.drag-image .border-btn {
+    border: 1px solid #3D9474 !important;
+    padding: 10px 25px !important;
+    border-radius: 150px !important;
+    color: #3D9474 !important;
+    cursor: pointer !important;
+}
+
+.profile-dashboard-upload-area.donation h3{
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.121946px;
+    color: #3D9474;
+}
+
+.initiative-container.profile .amount.black {
+    font-size: 18px;
+    line-height: 26px;
+    color: #111111;
+}
+
+.initiative-container.profile .amount.black span{
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 7px;
+}
+
+ul.my-profile-initiative {
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.initiative-container.profile .top-img .greenbutton.real {
+    background: #A6C846;
+}
+
+.initiative-container.profile .small-icon-text {
+    margin-right: 9px;
+}
 
 /***************Invoice**********************/
 
@@ -2579,6 +2935,10 @@ form.my-profile .card-text {
     max-width: 420px;
 }
 
+.success-report-dialog .modal-dialog{
+    max-width: 370px;
+}
+
 .success-payment-dialog h3 {
     font-weight: 500;
     font-size: 32px;
@@ -2686,6 +3046,20 @@ form.my-profile .card-text {
 .success-payment-dialog .modal-body {
     padding-top: 50px;
     padding-bottom: 30px;
+}
+
+.success-report-dialog img{
+    width: max-content;
+    margin: 0 auto;
+}
+
+.success-report-dialog h4{
+    margin-top: 15px;
+    color: #3D9474;
+}
+
+.success-report-dialog .green-p {
+    color: #3D9474;
 }
 
 /****************************Mobile Query**********************************/
@@ -3056,6 +3430,68 @@ form.my-profile .card-text {
     }
     #myChart {
         position: relative;
+    }
+
+    /******Profile***************/
+
+    .profile-banner.container {
+        padding-top: 30px !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .profile-sidebar-container{
+        padding-left: 0px;
+    }
+    .profile-sidenav{
+        width: 100%;
+    }
+    .profile-dashboard{
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: 60px;
+        border-radius: 0;
+        padding: 45px 0;
+    }
+
+    .profile-dashboard .text-container{
+        position: relative;
+        transform: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .join-365.gray-back.profile{
+        height: 750px !important;
+        background: #F3F4F6 !important;
+    }
+
+    .join-365.gray-back.profile{
+        height: 750px !important;
+        background: #F3F4F6 !important;
+    }
+
+    .transparent-container.join-365 {
+        margin-top: -175%;
+    }
+
+    .join-365.profile.transparent-container .graph-button{
+        padding: 9px 20px 12px !important;
+    }
+
+    .mobile-sidebar-collaspe, .mobile-sidebar-expand{
+        text-align: center;
+        padding: 10px 0 20px;
+    }
+
+    .mobile-sidebar-expand p{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.121946px;
+        color: #1F2937;
     }
 }
 

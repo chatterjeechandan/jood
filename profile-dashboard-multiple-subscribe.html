@@ -7,6 +7,7 @@
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/css-circular-prog-bar.css" rel="stylesheet">
   </head>
   <body dir="rtl"> 
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 navbar-expand">
@@ -70,12 +71,11 @@
     </header>   
     <main class="white-back">  
       <section class="profile-banner container pt-5">
-        <image src="./images/profile-banner.png" class="w-100 d-none d-sm-block"></image>
-        <image src="./images/profile-banner-mobile.png" class="w-100 d-block d-sm-none"></image>
+        <image src="./images/profile-banner.png" class="w-100"></image>
       </section>
       <section class="py-b text-center container profile transparent-container">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start col-md-4 text-end pe-0 py-0 profile-sidebar-container">
+          <div class="card-body d-flex flex-column align-items-start col-md-4 text-end pe-0 py-0">
             <div class="profile-sidenav">
               <div class="account-area mt-4">
                 <div class="logged-in d-flex justify-content-between align-items-center">
@@ -85,13 +85,9 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-sidebar-expand text-center d-none d-sm-none">
-                <p>ملفي الشخصي</p>
-                <a href="javascript:void(0)"><img src="./images/sidebar-expand.png"></a>
-              </div>
               <div class="menu-area mt-3">
                 <ul>
-                  <li class="active">
+                  <li >
                     <a href="#">
                       <div class="icon"><img src="./images/profile-sidebar-icon1.png"></div>
                       <div class="link">لوحة التحكم</div>
@@ -103,7 +99,7 @@
                       <div class="link">ملفي</div>
                     </a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="#">
                       <div class="icon"><img src="./images/profile-sidebar-icon3.png"></div>
                       <div class="link">خدمة 365</div>
@@ -141,9 +137,6 @@
                   </li>
                 </ul>
               </div>
-              <div class="mobile-sidebar-collaspe d-block d-sm-none">
-                <a href="javascript:void(0)"><img src="./images/sidebar-collaspe.png"></a>
-              </div>
             </div>
           </div>
           <div class="col-md-8 text-end">
@@ -179,20 +172,83 @@
                 </div>
               </div>
             </div>
+            <section class="profile-dashboard-upload-area mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="card-text">
+                    <div class="progress-circle over50 p87">
+                      <span class="small">نسبه اكتمال الهدف</span>
+                      <span>87%</span>
+                      <div class="left-half-clipper">
+                         <div class="first50-bar"></div>
+                         <div class="value-bar"></div>
+                      </div>
+                    </div>
+                    <div class="upload-process-items d-flex justify-content-between mt-3">
+                      <div class="each-item">
+                        <p class="m-0 green">المساهمة اليومية</p>
+                        <p class="m-0">1 ريال</p>
+                      </div>
+                      <div class="each-item">
+                        <p class="m-0 green">الأيام المتبقية</p>
+                        <p class="m-0">48 يوم</p>
+                      </div>
+                      <div class="each-item">
+                        <p class="m-0 green">آخر تاريخ</p>
+                        <p class="m-0">20/01/2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card-text">
+                    <div class="progress-circle over50 amber p60">
+                      <span class="small">نسبه اكتمال الهدف</span>
+                      <span>60%</span>
+                      <div class="left-half-clipper">
+                         <div class="first50-bar"></div>
+                         <div class="value-bar"></div>
+                      </div>
+                    </div>
+                    <div class="upload-process-items d-flex justify-content-between mt-3">
+                      <div class="each-item">
+                        <p class="m-0 green">المساهمة اليومية</p>
+                        <p class="m-0">1 ريال</p>
+                      </div>
+                      <div class="each-item">
+                        <p class="m-0 green">الأيام المتبقية</p>
+                        <p class="m-0">48 يوم</p>
+                      </div>
+                      <div class="each-item">
+                        <p class="m-0 green">آخر تاريخ</p>
+                        <p class="m-0">20/01/2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="drag-image">
+                    <button type="button"><img src="./images/upload-icon.png"></button>                      
+                    <p>استمر بالعطاء في جود 365</p>
+                    <input type="file" hidden>
+                  </div>
+                </div>
+              </div>
+            </section>            
             <div class="w-100 profile-transaction-area mt-5">
               <div class="d-flex justify-content-between">
                 <h3>نشاطات التبرع</h3>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <li class="nav-item ms-4" role="presentation">
-                    <button class="nav-link chart active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><div class="icon"></div>رسم بياني</button>
+                    <button class="nav-link chart " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><div class="icon"></div>رسم بياني</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link table" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><div class="icon"></div>سجل عمليات</button>
+                    <button class="nav-link table active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><div class="icon"></div>سجل عمليات</button>
                   </li>
                 </ul>
               </div>
               <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
                   <div class="d-flex justify-content-between chart-control my-3">
                     <div class="d-flex flex-column">
                       <div class="body">إجمالي التبرع</div>
@@ -207,7 +263,7 @@
                   </div>
                   <canvas id="myChart" style="width:100%;max-width:100%" dir="rtl"></canvas>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                   <table class="table table-striped mt-4">
                     <thead>
                       <tr>
@@ -299,86 +355,68 @@
           </div>
         </div>
       </section>
-      <div class="join-365 gray-back profile"></div> 
+      <div class="join-365 gray-back profile-dark-gray"></div> 
       <section class="py-5 text-center container transparent-container join-365 profile">        
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start col-md-6 text-end">
             <div class="text-container">          
-              <h3>خدمة جود 365</h3>
-              <p>تتيح لك التيرع بجميع ايام السنة للعائلات التي تحتاج<br>مساعدتكوتنظر وجودك ف خطوة واحدة</p>
+              <h3>ساهم الآن للحالات المختارة</h3>
+              <p>تقدر تضيف حالات أخرى لقائمة مفضلاتك
+                وتساهم أكثر بالخير</p>
+              <button class="border-btn float-start mt-3">اكتشف</button>
             </div>
-            <div class="accordion w-100" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <div class="profile-accordion-index-round"><div class="profile-accordion-index-count">1</div></div>
-                    ما هي خدمة جود 365؟
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    جود الإسكان هي إحدى مبادرات مؤسسة الإسكان التنموي الأهلية والتي تهدف إلى إشراك المجتمع أفرادا ومنظمات في العطاء الخيري السكني من خلال منصة إلكترونية تحقق الشفافية والدقة والاحترافية في تقديم المساهمة الخيرية .
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="profile-accordion-index-round"><div class="profile-accordion-index-count">2</div></div>
-                    ما تسعي اليه جود ؟
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    جود الإسكان هي إحدى مبادرات مؤسسة الإسكان التنموي الأهلية والتي تهدف إلى إشراك المجتمع أفرادا ومنظمات في العطاء الخيري السكني من خلال منصة إلكترونية تحقق الشفافية والدقة والاحترافية في تقديم المساهمة الخيرية .
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <div class="profile-accordion-index-round"><div class="profile-accordion-index-count">3</div></div>
-                    ما هي اهداف جود الاستراتيجية
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    جود الإسكان هي إحدى مبادرات مؤسسة الإسكان التنموي الأهلية والتي تهدف إلى إشراك المجتمع أفرادا ومنظمات في العطاء الخيري السكني من خلال منصة إلكترونية تحقق الشفافية والدقة والاحترافية في تقديم المساهمة الخيرية .
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-body d-flex flex-column align-items-end col-md-4 text-end position-relative">
-            <form class="needs-validation placement-form col-md-10" novalidate="">
-              <div class="placement-form-header d-flex">
-                <div class="img ms-3"><img src="./images/calender-icon.png"></div>
-                <h3><strong>أيامك السعيدة</strong></h3>
-              </div>
-              <p class="sub-header">	ساهم يوميًا بأي مبلغ تختاره لمدة </br>365 يومًا
-              </p>       
-              <div class="row g-3">
-                <div class="col-md-12">
-                  <label for="firstName" class="form-label not-bold">حدد مبلغ التبرع اليومي</label>
-                  <div class="place-input-header">
-                    <div class="graph-button-area">
-                      <button class="graph-button active me-0">1 ريال</button>
-                      <button class="graph-button">5 ريال</button>
-                      <button class="graph-button">10 ريال</button>
-                    </div>
-                  </div>                 
-                </div>                
-                <div class="col-md-12">
-                  <label for="firstName" class="form-label">خصص مبلغ التبرع اليومي</label>
-                  <div class="place-input-header">
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                    <a href="#" class="counter">سهم</a>
-                  </div>                 
-                </div>
-                <button class="btn btn-secondary btn-lg px-5 mt-4 mx-auto" type="submit">اشترك  الآن</button>
-                </div>
-            </form>
             <img src="./images/clip-vector.png" class="join-365-img">
+          </div>
+          <div class="card-body d-flex flex-column align-items-end col-md-3 text-end position-relative initiative-container profile-dark-gray">
+            <div class="card inv-initiative">
+              <div class="position-relative">
+                <img src="./images/inv-initiative-col-img3.png" class="w-100">
+                <div class="top-img">
+                  <img src="./images/Brands.png">
+                  <div class="greenbutton">دعم شراء سكن</div>
+                </div>
+              </div>  
+              <div class="card-body">
+                <p class="card-text mb-4 fs-5"><strong>مبادرة المتبرعين عن خالد الحمد رحمه الله</strong></p>
+                <div class="d-flex justify-content-center align-items-center pb-3 three-icon-holder">
+                  <div class="d-flex mx-3">
+                    <img src="./images/compas-icon.png">
+                    <div class="small-icon-text">الرياض</div>
+                  </div>
+                  <div class="d-flex mx-3">
+                    <img src="./images/two-user-icon.png">
+                    <div class="small-icon-text">11 فرد </div>
+                  </div>
+                  <div class="d-flex mx-3">
+                    <img src="./images/graph-icon.png">
+                    <div class="small-icon-text">معاق</div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center my-4">
+                  <div class="d-flex mx-1 flex-column">
+                    <p class="text-center mb-1 fs-6"><strong>تم جمع</strong></p>
+                    <p class="text-center fs-5"><strong>3000.00 ر.س</strong></p>
+                  </div>
+                  <div class="d-flex mx-3 process-cicle-holder">
+                    <div class="progress-circle red p20">
+                      <span>20%</span>
+                      <div class="left-half-clipper">
+                         <div class="first50-bar"></div>
+                         <div class="value-bar"></div>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="d-flex mx-1 flex-column">
+                    <p class="text-center mb-1 fs-6"><strong>الهدف</strong></p>
+                    <p class="text-center fs-5"><strong>3400.00 ر.س</strong></p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-4">
+                  <div class="col-md-8"><button class="btn btn-primary btn-lg px-5 w-100" type="submit">ساهم الآن</button></div>
+                  <div class="col-md-4 d-flex justify-content-end"><a href="javascript:void(0)"><img src="./images/upload-button-icon.png"></a></div>                    
+                </div>
+              </div>
+            </div>
           </div> 
         </div>
       </section>
@@ -469,16 +507,58 @@ new Chart("myChart", {
   }
 });
 
-$(document).ready(function(){
-  $(".mobile-sidebar-collaspe a").click(function(){    
-    $(".profile-sidenav .menu-area").hide();
-    $(".mobile-sidebar-expand").removeClass('d-none').addClass('d-block');
-    $(".mobile-sidebar-collaspe").removeClass('d-block').addClass('d-none');
-  });
-  $(".mobile-sidebar-expand a").click(function(){    
-    $(".profile-sidenav .menu-area").show();
-    $(".mobile-sidebar-collaspe").removeClass('d-none').addClass('d-block');
-    $(".mobile-sidebar-expand").removeClass('d-block').addClass('d-none');
-  });
+
+  const dropArea = document.querySelector(".drag-image"),
+dragText = dropArea.querySelector("h6"),
+button = dropArea.querySelector("button"),
+input = dropArea.querySelector("input");
+let file; 
+
+button.onclick = ()=>{
+  input.click(); 
+}
+
+input.addEventListener("change", function(){
+ 
+  file = this.files[0];
+  dropArea.classList.add("active");
+  viewfile();
 });
+
+dropArea.addEventListener("dragover", (event)=>{
+  event.preventDefault();
+  dropArea.classList.add("active");
+  dragText.textContent = "Release to Upload File";
+});
+
+
+dropArea.addEventListener("dragleave", ()=>{
+  dropArea.classList.remove("active");
+  dragText.textContent = "Drag & Drop to Upload File";
+}); 
+
+dropArea.addEventListener("drop", (event)=>{
+  event.preventDefault(); 
+   
+  file = event.dataTransfer.files[0];
+  viewfile(); 
+});
+
+function viewfile(){
+  let fileType = file.type; 
+  let validExtensions = ["image/jpeg", "image/jpg", "image/png"];
+  if(validExtensions.includes(fileType)){ 
+    let fileReader = new FileReader(); 
+    fileReader.onload = ()=>{
+      let fileURL = fileReader.result; 
+       let imgTag = `<img src="${fileURL}" alt="image">`;
+      dropArea.innerHTML = imgTag; 
+    }
+    fileReader.readAsDataURL(file);
+  }else{
+    alert("This is not an Image File!");
+    dropArea.classList.remove("active");
+    dragText.textContent = "Drag & Drop to Upload File";
+  }
+}
 </script>
