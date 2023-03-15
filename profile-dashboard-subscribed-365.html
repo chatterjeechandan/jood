@@ -184,6 +184,7 @@
               <div class="row">
                 <div class="col-sm-4">
                   <div class="card-text">
+                    <div class="logo-365"><img src="./images/logo-365.png"></div>
                     <div class="progress-circle over50 p87">
                       <span class="small">نسبه اكتمال الهدف</span>
                       <span>87%</span>
@@ -209,11 +210,13 @@
                   </div>
                 </div>
                 <div class="col-sm-8">
-                  <div class="drag-image">
-                    <button type="button"><img src="./images/upload-icon.png"></button>                      
-                    <p>استمر بالعطاء في جود 365</p>
-                    <input type="file" hidden>
-                  </div>
+                  <a href="javascript:void(0)">
+                    <div class="drag-image">
+                      <button type="button"><img src="./images/big-plus.png"></button>                      
+                      <p>استمر بالعطاء في جود 365</p>
+                      <input type="file" hidden>
+                    </div>
+                  </a>
                 </div>
               </div>
             </section>            
@@ -490,61 +493,6 @@ new Chart("myChart", {
 }
   }
 });
-
-
-  const dropArea = document.querySelector(".drag-image"),
-dragText = dropArea.querySelector("h6"),
-button = dropArea.querySelector("button"),
-input = dropArea.querySelector("input");
-let file; 
-
-button.onclick = ()=>{
-  input.click(); 
-}
-
-input.addEventListener("change", function(){
- 
-  file = this.files[0];
-  dropArea.classList.add("active");
-  viewfile();
-});
-
-dropArea.addEventListener("dragover", (event)=>{
-  event.preventDefault();
-  dropArea.classList.add("active");
-  dragText.textContent = "Release to Upload File";
-});
-
-
-dropArea.addEventListener("dragleave", ()=>{
-  dropArea.classList.remove("active");
-  dragText.textContent = "Drag & Drop to Upload File";
-}); 
-
-dropArea.addEventListener("drop", (event)=>{
-  event.preventDefault(); 
-   
-  file = event.dataTransfer.files[0];
-  viewfile(); 
-});
-
-function viewfile(){
-  let fileType = file.type; 
-  let validExtensions = ["image/jpeg", "image/jpg", "image/png"];
-  if(validExtensions.includes(fileType)){ 
-    let fileReader = new FileReader(); 
-    fileReader.onload = ()=>{
-      let fileURL = fileReader.result; 
-       let imgTag = `<img src="${fileURL}" alt="image">`;
-      dropArea.innerHTML = imgTag; 
-    }
-    fileReader.readAsDataURL(file);
-  }else{
-    alert("This is not an Image File!");
-    dropArea.classList.remove("active");
-    dragText.textContent = "Drag & Drop to Upload File";
-  }
-}
 
 $(document).ready(function(){
   $(".mobile-sidebar-collaspe a").click(function(){    

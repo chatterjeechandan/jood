@@ -2707,6 +2707,10 @@ ul.my-profile-initiative {
     justify-content: space-between;
 }
 
+.logo-365 {
+    margin-top: -15px;
+}
+
 /***************Invoice**********************/
 
 .invoice-header {
@@ -3605,6 +3609,15 @@ ul.my-profile-initiative {
     }
     .modal.show .modal-dialog{
         margin: 50px auto;
+    }
+
+    .profile-transaction-area > .d-flex {
+        flex-direction: column;
+    }
+
+    .profile-transaction-area .d-flex ul{
+        margin: 20px 0;
+        padding: 0;
     }
 
     /***********Others**************/
