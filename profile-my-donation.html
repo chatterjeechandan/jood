@@ -71,11 +71,12 @@
     </header>   
     <main class="white-back">  
       <section class="profile-banner container pt-5">
-        <image src="./images/profile-banner.png" class="w-100"></image>
+        <image src="./images/profile-banner.png" class="w-100 d-none d-sm-block"></image>
+        <image src="./images/profile-banner-mobile.png" class="w-100 d-block d-sm-none"></image>
       </section>
       <section class="py-b text-center container profile transparent-container">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start col-md-4 text-end pe-0 py-0">
+          <div class="card-body d-flex flex-column align-items-start col-md-4 text-end pe-0 py-0 profile-sidebar-container">
             <div class="profile-sidenav">
               <div class="account-area mt-4">
                 <div class="logged-in d-flex justify-content-between align-items-center">
@@ -84,6 +85,10 @@
                     <div class="user-name pe-2">مرحبًا،<span>محمد</span></div>
                   </div>
                 </div>
+              </div>
+              <div class="mobile-sidebar-expand text-center d-none d-sm-none">
+                <p>ملفي الشخصي</p>
+                <a href="javascript:void(0)"><img src="./images/sidebar-expand.png"></a>
               </div>
               <div class="menu-area mt-3">
                 <ul>
@@ -136,6 +141,9 @@
                     </a>
                   </li>
                 </ul>
+              </div>
+              <div class="mobile-sidebar-collaspe d-block d-sm-none">
+                <a href="javascript:void(0)"><img src="./images/sidebar-collaspe.png"></a>
               </div>
             </div>
           </div>
@@ -329,128 +337,130 @@
                 <h3>نشاطات التبرع</h3>
                 <div><a href="javascript:void(0)"><img src="./images/previous.png"></a></div>
               </div>
-              <table class="table table-striped mt-4">
-                <thead>
-                  <tr>
-                    <th scope="col">عنوان التبرع</th>
-                    <th scope="col">تاريخ</th>
-                    <th scope="col">نوع التبرع</th>
-                    <th scope="col">فاتورة</th>
-                    <th scope="col">مبلغ التبرع</th>
-                    <th scope="col">فعل</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="d-flex">
-                        <img src="./images/profile-table-icon1.png">
-                        سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
-                      </div>
-                    </td>
-                    <td>31/12/2022</td>
-                    <td>التبرع العادي</td>
-                    <td>JoE9398383</td>
-                    <td>10ريال</td>
-                    <td>
-                      <div class="d-flex">
-                      <a href="#" class="underline-anchor ms-2">تفاصيل</a>
-                      <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex">
-                        <img src="./images/profile-table-icon2.png">
-                        سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
-                      </div>
-                    </td>
-                    <td>31/12/2022</td>
-                    <td>التبرع العادي</td>
-                    <td>JoE9398383</td>
-                    <td>10ريال</td>
-                    <td>
-                      <div class="d-flex">
-                      <a href="#" class="underline-anchor ms-2">تفاصيل</a>
-                      <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex">
-                        <img src="./images/profile-table-icon1.png">
-                        سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
-                      </div>
-                    </td>
-                    <td>31/12/2022</td>
-                    <td>التبرع العادي</td>
-                    <td>JoE9398383</td>
-                    <td>10ريال</td>
-                    <td>
-                      <div class="d-flex">
-                      <a href="#" class="underline-anchor ms-2">تفاصيل</a>
-                      <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex">
-                        <img src="./images/profile-table-icon2.png">
-                        سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
-                      </div>
-                    </td>
-                    <td>31/12/2022</td>
-                    <td>التبرع العادي</td>
-                    <td>JoE9398383</td>
-                    <td>10ريال</td>
-                    <td>
-                      <div class="d-flex">
-                      <a href="#" class="underline-anchor ms-2">تفاصيل</a>
-                      <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex">
-                        <img src="./images/profile-table-icon1.png">
-                        سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
-                      </div>
-                    </td>
-                    <td>31/12/2022</td>
-                    <td>التبرع العادي</td>
-                    <td>JoE9398383</td>
-                    <td>10ريال</td>
-                    <td>
-                      <div class="d-flex">
-                      <a href="#" class="underline-anchor ms-2">تفاصيل</a>
-                      <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex">
-                        <img src="./images/profile-table-icon2.png">
-                        سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
-                      </div>
-                    </td>
-                    <td>31/12/2022</td>
-                    <td>التبرع العادي</td>
-                    <td>JoE9398383</td>
-                    <td>10ريال</td>
-                    <td>
-                      <div class="d-flex">
-                      <a href="#" class="underline-anchor ms-2">تفاصيل</a>
-                      <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="table-responsive">
+                <table class="table table-striped mt-4">
+                  <thead>
+                    <tr>
+                      <th scope="col">عنوان التبرع</th>
+                      <th scope="col">تاريخ</th>
+                      <th scope="col">نوع التبرع</th>
+                      <th scope="col">فاتورة</th>
+                      <th scope="col">مبلغ التبرع</th>
+                      <th scope="col">فعل</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="d-flex">
+                          <img src="./images/profile-table-icon1.png">
+                          سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                        </div>
+                      </td>
+                      <td>31/12/2022</td>
+                      <td>التبرع العادي</td>
+                      <td>JoE9398383</td>
+                      <td>10ريال</td>
+                      <td>
+                        <div class="d-flex">
+                        <a href="#" class="underline-anchor ms-2">تفاصيل</a>
+                        <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex">
+                          <img src="./images/profile-table-icon2.png">
+                          سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                        </div>
+                      </td>
+                      <td>31/12/2022</td>
+                      <td>التبرع العادي</td>
+                      <td>JoE9398383</td>
+                      <td>10ريال</td>
+                      <td>
+                        <div class="d-flex">
+                        <a href="#" class="underline-anchor ms-2">تفاصيل</a>
+                        <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex">
+                          <img src="./images/profile-table-icon1.png">
+                          سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                        </div>
+                      </td>
+                      <td>31/12/2022</td>
+                      <td>التبرع العادي</td>
+                      <td>JoE9398383</td>
+                      <td>10ريال</td>
+                      <td>
+                        <div class="d-flex">
+                        <a href="#" class="underline-anchor ms-2">تفاصيل</a>
+                        <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex">
+                          <img src="./images/profile-table-icon2.png">
+                          سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                        </div>
+                      </td>
+                      <td>31/12/2022</td>
+                      <td>التبرع العادي</td>
+                      <td>JoE9398383</td>
+                      <td>10ريال</td>
+                      <td>
+                        <div class="d-flex">
+                        <a href="#" class="underline-anchor ms-2">تفاصيل</a>
+                        <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex">
+                          <img src="./images/profile-table-icon1.png">
+                          سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                        </div>
+                      </td>
+                      <td>31/12/2022</td>
+                      <td>التبرع العادي</td>
+                      <td>JoE9398383</td>
+                      <td>10ريال</td>
+                      <td>
+                        <div class="d-flex">
+                        <a href="#" class="underline-anchor ms-2">تفاصيل</a>
+                        <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex">
+                          <img src="./images/profile-table-icon2.png">
+                          سيدة أرملة لديها 4 أبناء تعاني من ظروف صعبة وقاهرة
+                        </div>
+                      </td>
+                      <td>31/12/2022</td>
+                      <td>التبرع العادي</td>
+                      <td>JoE9398383</td>
+                      <td>10ريال</td>
+                      <td>
+                        <div class="d-flex">
+                        <a href="#" class="underline-anchor ms-2">تفاصيل</a>
+                        <a href="#" class="download-icon-table"><img src="./images/download-icon.png"></a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
@@ -511,37 +521,9 @@
 </body>
 </html>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
 
 <script>
-var xValues = [0,10,20,30,40,50,60,120,130,140,150];
-var yValues = [27,37,21,31,49,31,20,28,7,42,21,20,12,25,18];
-
-new Chart("myChart", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-      fill: false,
-      backgroundColor: "#1EB78A",
-      borderColor: "#1EB78A",
-      data: yValues,
-      lineTension: 0.4
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{ticks: {min: 0, max:60}}],
-    },
-    tooltips: {
-  rtl: true,
-  bodyFontSize: 10,
-  titleFontSize: 11,
-}
-  }
-});
-
 
   const dropArea = document.querySelector(".drag-image"),
 dragText = dropArea.querySelector("h6"),
@@ -596,4 +578,18 @@ function viewfile(){
     dragText.textContent = "Drag & Drop to Upload File";
   }
 }
+
+$(document).ready(function(){
+  $(".mobile-sidebar-collaspe a").click(function(){    
+    $(".profile-sidenav .menu-area").hide();
+    $(".mobile-sidebar-expand").removeClass('d-none').addClass('d-block');
+    $(".mobile-sidebar-collaspe").removeClass('d-block').addClass('d-none');
+  });
+  $(".mobile-sidebar-expand a").click(function(){    
+    $(".profile-sidenav .menu-area").show();
+    $(".mobile-sidebar-collaspe").removeClass('d-none').addClass('d-block');
+    $(".mobile-sidebar-expand").removeClass('d-block').addClass('d-none');
+  });
+});
 </script>
+

@@ -2367,6 +2367,7 @@ form.profile-report-problem{
 
 .profile-transaction-area table td img{
     margin-left: 10px;
+    height: fit-content;
 }
 
 .profile-transaction-area table th {
@@ -2421,6 +2422,8 @@ form.my-profile .card-text {
     font-size: 30px;
     line-height: 35px;
     cursor: pointer;
+    min-width: 235px;
+    text-align: center;
 }
 
 .padd-btn span{
@@ -2694,6 +2697,14 @@ ul.my-profile-initiative {
 
 .initiative-container.profile .small-icon-text {
     margin-right: 9px;
+}
+
+.profile-not-subscribed .calender-text{
+    margin-top: -40px;
+}
+
+.padd-button-container {
+    justify-content: space-between;
 }
 
 /***************Invoice**********************/
@@ -3178,9 +3189,9 @@ ul.my-profile-initiative {
         margin-left: auto;
         display: flex;
     }
-    .pagination-holder{
+    /* .pagination-holder{
         display: none !important;
-    }
+    } */
     .advance-search-area{
         width: 100%;
     }
@@ -3445,7 +3456,7 @@ ul.my-profile-initiative {
     .profile-sidenav{
         width: 100%;
     }
-    .profile-dashboard{
+    .profile-dashboard.extended-mobile{
         margin-left: -20px;
         margin-right: -20px;
         margin-top: 60px;
@@ -3493,6 +3504,115 @@ ul.my-profile-initiative {
         letter-spacing: 0.121946px;
         color: #1F2937;
     }
+
+    .profile-dashboard {
+        margin-top: 30px;
+    }
+
+    .profile-dashboard-count{
+        flex-wrap: wrap;
+        padding-right: 15px;
+    }
+
+    .profile-dashboard-count .each-item {
+        flex-basis: 50%;
+        padding-bottom: 20px;
+    }
+
+    .profile-transaction-area h3{
+        font-size: 25px;
+    }
+
+    .profile-transaction-area .nav-tabs .nav-item:first-child{
+        margin-left: 10px !important;
+    }
+
+    .profile-transaction-area .nav-tabs .nav-link{
+        font-size: 12px;
+        line-height: 15px;
+        padding: 10px 6px;
+    }
+
+    .profile-transaction-area table td img{
+        height: fit-content;
+    }
+
+    .join-365.gray-back.profile-dark-gray.not-up{
+        display: none;
+    }
+
+    .transparent-container.join-365.not-up{
+        margin-top: 0;
+    }
+
+    .profile-dashboard-upload-area{
+        margin-top: 30px !important;
+    }
+
+    .profile-dashboard-upload-area .col-sm-4{
+        margin-bottom: 30px !important;
+    }
+
+    .profile-not-subscribed{
+        text-align: center;
+    }
+
+    .profile-not-subscribed .padd-button-container .padd-btn{
+        width: max-content;
+        margin: 0 auto;
+        min-width: 175px;
+        margin-bottom: 15px;
+    }
+    
+    .profile-not-subscribed .calender-text{
+        margin-top: 0 !important;
+        text-align: center;
+        margin-right: 0 !important;
+    }
+
+    .profile-not-subscribed .form-control-para{
+        text-align: center;
+    }
+
+    .profile-not-subscribed .btn-secondary {
+        margin: 30px auto 0;
+    }
+
+    .profile-dashboard-upload-area.donation .drag-image{
+        padding: 50px;
+    }
+
+    .nav.my-profile-initiative .nav-link {
+        font-size: 12px;
+    }
+
+    .initiative-button-container {
+        width: 250px;
+    }
+
+    .pagination-holder .page-no{
+        padding: 10px 17px;
+    }
+
+    .profile-notification ul li a{
+        width:100%;
+    }
+    .profile-notification ul li a .title-desc .title, .profile-notification ul li a .title-desc .description{
+        width: 170px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .modal.show .modal-dialog{
+        margin: 50px auto;
+    }
+
+    /***********Others**************/
+
+    .transparent-container.join-365 .graph-button{
+        padding: 9px 25px 12px;
+    }
+
 }
 
 @media only screen and (min-width: 768px)  and (max-width: 950px) {
@@ -3557,4 +3677,3 @@ ul.my-profile-initiative {
         margin: 0 auto;
     }
 }
-
