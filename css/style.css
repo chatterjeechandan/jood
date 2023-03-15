@@ -1127,11 +1127,11 @@ form.profile-report-problem{
     color: #6B7280;
 }
 
-.profile-notification ul li:hover{
+.profile-notification ul li:hover, .profile-notification ul li.unread{
     background: rgba(61, 148, 116, 0.05);
 }
 
-.profile-notification ul li:hover a{
+.profile-notification ul li:hover a, .profile-notification ul li.unread a{
     border-right: 4px solid #FA9A2A;
 }
 
