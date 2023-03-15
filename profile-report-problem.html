@@ -186,44 +186,31 @@
                 <form class="needs-validation profile-report-problem" novalidate="">
                   <div class="row g-3">
                     <div class="col-sm-12">
-                      <label for="firstName" class="form-label">الاسم الكامل</label>
+                      <label for="firstName" class="form-label">*الاسم الكامل</label>
                       <input type="text" class="form-control" id="firstName" placeholder="محمد علي احمد" value="" required="">
                     </div>
                     <div class="col-sm-6">
-                      <label for="firstName" class="form-label">البريد الإلكتروني </label>
+                      <label for="firstName" class="form-label">*البريد الإلكتروني </label>
                       <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
                     </div>     
                     <div class="col-sm-6">
-                      <label for="lastName" class="form-label">الجوال</label>
+                      <label for="lastName" class="form-label">*الجوال</label>
                       <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                    </div>      
-                    <div class="my-3">
-                      <label for="lastName" class="form-label">الجوال</label>
-                      <div class="d-flex">
-                        <div class="form-check">
-                          <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
-                          <label class="form-check-label" for="credit">مشاكل دفع</label>
-                        </div>
-                        <div class="form-check">
-                          <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
-                          <label class="form-check-label" for="debit">مشاكل فنية</label>
-                        </div>
-                        <div class="form-check">
-                          <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
-                          <label class="form-check-label" for="paypal">مشاكل كرت الإهداء</label>
-                        </div>
-                      </div>
-                    </div>      
+                    </div>           
                     <div class="col-md-12">
-                      <label for="country" class="form-label">نوع المشكلة</label>
+                      <label for="country" class="form-label">تصنيف المشكلة</label>
                       <select class="form-select" id="country" required="">
-                        <option value="">أدخلت مبلغ خاطىء</option>
-                        <option>أدخلت مبلغ خاطىء</option>
+                        <option value="">مشاكل دفع</option>
+                        <option>مشاكل دفع</option>
                       </select>
                     </div>      
                     <div class="col-sm-12">
-                      <label for="firstName" class="form-label">المبلغ الذي تم دفعه</label>
+                      <label for="firstName" class="form-label">عنوان الرسالة</label>
                       <input type="text" class="form-control" id="firstName" placeholder="محمد علي احمد" value="" required="">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">الرسالة</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">اكتب رسالتك هنا</textarea>
                     </div>
                     <div class="col-sm-12">
                       <label for="firstName" class="form-label">المرفقات</label>
