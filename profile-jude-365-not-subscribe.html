@@ -340,6 +340,9 @@ $(document).ready(function(){
     $(".profile-sidenav .menu-area").hide();
     $(".mobile-sidebar-expand").removeClass('d-none').addClass('d-block');
     $(".mobile-sidebar-collaspe").removeClass('d-block').addClass('d-none');
+    $('html, body').animate({
+      scrollTop: $(".profile-sidenav").offset().top
+    });
   });
   $(".mobile-sidebar-expand a").click(function(){    
     $(".profile-sidenav .menu-area").show();

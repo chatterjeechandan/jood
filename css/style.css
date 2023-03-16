@@ -155,6 +155,20 @@ header{
     background: #EFEFEF;
     margin-left: 10px;
     margin-top: 11px;
+    position: relative;
+}
+
+.notification-holder .unread {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background: #FA9A2A;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    line-height: 14px;
+    top: 5px;
 }
 
 .sign-in-header{
@@ -1317,9 +1331,6 @@ form.profile-report-problem{
 }
 
 /*******************Partner Association*********************/
-.container.partner-association .first-img{
-    float:none;
-}
 
 .container.partner-association .second-img{
     margin-top: -100px;
@@ -1338,8 +1349,6 @@ form.profile-report-problem{
 
 .container.partner-association .care-info img{
     position: absolute;
-    top: -18px;
-    right: -19px;
 }
 
 .container.partner-association .care-info .text-container{
@@ -1352,8 +1361,18 @@ form.profile-report-problem{
 }
 
 .container.partner-association .care-info.left{
-    left: 0;
+    left: -12%;
     top: 40%;
+}
+
+.container.partner-association .care-info.left img{
+    right: auto;
+    top: -34px;
+}
+
+.container.partner-association .care-info.right img{
+    left: auto;
+    top: -30px;
 }
 
 .container.partner-association .care-info.right{
@@ -3077,6 +3096,83 @@ ul.my-profile-initiative {
     color: #3D9474;
 }
 
+
+/****************Desktop Notification***************/
+
+.profile-notification.header-notification ul li a .title-desc{
+    width: 280px;
+}
+
+.profile-notification.header-notification ul li a .title-desc .title{
+    width: 155px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile-notification.header-notification ul li a .title-desc .description{
+    width: 155px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.profile-notification.header-notification ul li a .date{
+    left: 0px;
+}
+
+.modal.notification-modal.show .modal-dialog {
+    max-width: 440px;
+    transform: translate(-90%,80px) !important;
+}
+
+.profile-notification.header-notification ul li {
+    padding: 5px 15px 8px;
+    margin-bottom: 10px;
+}
+
+.profile-notification.header-notification ul li a {
+    width: 100%;
+    margin-right: -30px;
+}
+
+.notification-modal .modal-content{
+    border: 0;
+    border-radius: 12px;
+}
+
+.notification-modal .modal-body{
+    padding: 25px 0 0;
+}
+
+.notification-modal .modal-body .title-holder{
+        /* padding: 0 15px 15px; */
+    border-bottom: 1px solid #E2E8F0;
+    padding-bottom: 15px;
+    margin: 0 15px;
+}
+
+.notification-modal .modal-body h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: right;
+    color: #1F2937;
+    width: 100%;
+}
+
+.notification-modal .modal-body p{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: right;
+    padding: 20px 15px;
+}
+
+.profile-notification.header-notification ul {
+    border-radius: 0;
+    border: 0;
+}
+
 /****************************Mobile Query**********************************/
 
 
@@ -3092,9 +3188,6 @@ ul.my-profile-initiative {
     }
     .img-holder-about{
         margin-top: 30px;
-    }
-    .logo-img-holder-about{
-        display: none;
     }
     .about-us-container h3{
         margin: 0 auto;
@@ -3624,6 +3717,26 @@ ul.my-profile-initiative {
 
     .transparent-container.join-365 .graph-button{
         padding: 9px 25px 12px;
+    }
+
+    /************partner**********************/
+
+    .partner-association .description{
+        width: 100%;
+    }
+
+    .container.partner-association .img-holder-about img.first-img{
+        width: 80%;
+    }
+
+    .container.partner-association .care-info.left {
+        left: 15px;
+        top: 43%;
+    }
+
+    .container.partner-association .care-info.right {
+        right: 15px;
+        top: 21%;
     }
 
 }
