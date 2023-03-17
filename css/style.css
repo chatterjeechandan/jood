@@ -4202,6 +4202,7 @@ ul.my-profile-initiative {
 
     .slider-left-ribon img{
         width: 25%;
+        cursor: pointer;
     }
 
     .movable-text-banner {
