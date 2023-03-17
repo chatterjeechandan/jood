@@ -3566,6 +3566,10 @@ ul.my-profile-initiative {
     padding: 40px 12px;
 }
 
+.modal {
+    z-index: 999999 !important;
+}
+
 /****************************Mobile Query**********************************/
 
 
