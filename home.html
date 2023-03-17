@@ -1019,70 +1019,194 @@
           <div class="modal-body text-center">
             <a href="javascript:void(0)" class="cross-icon" data-bs-dismiss="modal"><img src="./images/popup-cross.png"></a>
             <form class="needs-validation text-end w-100" novalidate="">
-              <div class="placement-form-header d-flex">
-                <div class="img ms-3"><img src="./images/currency-database.png"></div>
-                <h3>اكتتب بخطوة بواحدة</h3>
+              <div class="placement-form-header d-flex align-items-center mb-4">
+                <div class="img ms-3"><img src="./images/payment-icon-modal.png"></div>
+                <h3>ساهم بخطوة فقط</h3>
               </div> 
-              <div class="payment-method-container d-flex justify-content-center">
-                <div class="payment-method mx-2 active"><img src="./images/apple-pay-payment.png"></div>
-                <div class="payment-method mx-2"><img src="./images/stc-payment.png"></div>
-                <div class="payment-method mx-2"><img src="./images/card-pay-payment.png"></div>
-              </div>        
-              <div class="row g-3 mt-2">
-                <div class="col-md-12">
-                  <label for="firstName" class="form-label">الاسم</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                </div> 
-                <div class="col-md-12">
-                  <label for="firstName" class="form-label">يرجي ادخال رقم الجول</label>
-                  <input type="text" class="form-control text-start" id="firstName" placeholder="xxxxxxxxxxx 05" value="" required="">
-                </div>  
-                <div class="col-md-6">
-                  <label for="firstName" class="form-label">عدد الأسهم</label>
-                  <div class="place-input-header">
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                    <a href="#" class="counter">سهم</a>
-                  </div>  
-                  <p class="input-note">السهم يساوي 10 ريال</p>              
-                </div>
-                <div class="col-md-6 dimmed-back">
-                  <label for="firstName" class="form-label">المبلغ</label>
-                  <div class="place-input-header">
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="10" required="" readonly="">
-                    <a href="#" class="counter">سهم</a>
-                  </div>                 
-                </div>
-                <div class="my-2">
-                  <div class="d-flex">
-                    <div class="form-check">
-                      <label class="form-check-label" for="credit"><strong>نوع الاكتتاب</strong></label>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                    <img src="./images/apple-pay-payment.png">
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <buttn class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <img src="./images/stc-payment.png">
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                    <img src="./images/card-pay-payment.png">
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="row g-3 mt-2">
+                    <div class="col-md-12">
+                      <label for="firstName" class="form-label">الاسم</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    </div> 
+                    <div class="col-md-12">
+                      <label for="firstName" class="form-label">يرجي ادخال رقم الجول</label>
+                      <input type="text" class="form-control text-start" id="firstName" placeholder="xxxxxxxxxxx 05" value="" required="">
+                    </div>  
+                    <div class="col-md-6">
+                      <label for="firstName" class="form-label">عدد الأسهم</label>
+                      <div class="place-input-header">
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <a href="#" class="counter">سهم</a>
+                      </div>  
+                      <p class="input-note">السهم يساوي 10 ريال</p>              
                     </div>
-                    <div class="form-check">
-                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
-                      <label class="form-check-label" for="credit">صدقة</label>
+                    <div class="col-md-6 dimmed-back">
+                      <label for="firstName" class="form-label">المبلغ</label>
+                      <div class="place-input-header">
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="10" required="" readonly="">
+                        <a href="#" class="counter">سهم</a>
+                      </div>                 
                     </div>
-                    <div class="form-check">
-                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
-                      <label class="form-check-label" for="debit">زكاة</label>
+                    <div class="my-2">
+                      <div class="d-flex">
+                        <div class="form-check">
+                          <label class="form-check-label" for="credit"><strong>نوع الاكتتاب</strong></label>
+                        </div>
+                        <div class="form-check">
+                          <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                          <label class="form-check-label" for="credit">صدقة</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                          <label class="form-check-label" for="debit">زكاة</label>
+                        </div>                    
+                      </div>
                     </div>
-                
+                    <div class="form-check custom-checkbox">                
+                      <input type="checkbox" class="form-check-input custom-control-input" id="same-address" checked="">                  
+                      <label class="form-check-label" for="same-address">
+                        موافق على <strong>شروط وأحكام</strong> الاكتتاب
+                      </label>                  
+                    </div>
+                    <button class="w-auto btn btn-secondary btn-lg px-5 mt-4 mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">ساهم الآن</button>
                   </div>
                 </div>
-                <div class="form-check custom-checkbox">                
-                  <input type="checkbox" class="form-check-input custom-control-input" id="same-address" checked="">                  
-                  <label class="form-check-label" for="same-address">
-                    موافق على <strong>شروط وأحكام</strong> الاكتتاب
-                  </label>                  
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="row g-3 mt-2">
+                    <div class="col-md-12">
+                      <label for="country" class="form-label">المهدي له</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="">الرجاء التحديد</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12">
+                      <label for="firstName" class="form-label">جوال المهدي له</label>
+                      <input type="text" class="form-control text-start" id="firstName" placeholder="05 xxxxxxxxxxx" value="" required="">
+                      <p>الرجاء ادخال رق جوالك (يجب ان تكون مشترك في برامج قطاف من STC والمزيد من المعلومات ارسل (قطاف) الي 900 </p>
+                    </div>
+                    <button class="w-auto btn btn-secondary btn-lg px-5 mt-4 mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">ساهم الآن</button>
+                  </div>
                 </div>
-                <button class="w-auto btn btn-secondary btn-lg px-5 mt-4 mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">ساهم الآن</button>
+                <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  <div class="row g-3 mt-2">
+                    <div class="col-md-12">
+                      <label for="firstName" class="form-label">ساهم سريعًا بأي مبلغ تختاره</label>
+                      <div class="d-flex payment-selection-button">
+                        <button class="amount-btn active">1 ريال</button>
+                        <button class="amount-btn">5 ريال</button>
+                        <button class="amount-btn">10 ريال</button>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <label for="firstName" class="form-label">خصص مبلغ المساهمة</label>
+                      <div class="place-input-header">
+                        <input type="text" class="form-control" id="firstName" placeholder="خصص مبلغ المساهمة" value="" required="">
+                        <a href="#" class="counter">ريال</a>
+                      </div>                 
+                    </div>
+                    <div class="mt-3">
+                      <div class="d-flex">
+                        <div class="form-check">
+                          <label class="form-check-label" for="credit"><strong>نوع المساهمة</strong></label>
+                        </div>
+                        <div class="form-check">
+                          <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                          <label class="form-check-label" for="credit">صدقة</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                          <label class="form-check-label" for="debit">زكاة</label>
+                        </div>                    
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <label for="firstName" class="form-label">يرجي ادخال رقم الجول</label>
+                      <input type="text" class="form-control text-start" id="firstName" placeholder="xxxx   xxxx   xxxx   xxxx" value="" required="">
+                    </div>  
+                    <div class="col-md-6">
+                      <label for="firstName" class="form-label">تاريخ الإنتهاء</label>
+                      <div class="place-input-header">
+                        <input type="text" class="form-control text-start" id="firstName" placeholder="MM/YY" value="" required="">
+                      </div>              
+                    </div>
+                    <div class="col-md-6">
+                      <label for="firstName" class="form-label">رمز الحماية</label>
+                      <div class="place-input-header">
+                        <input type="text" class="form-control text-start" id="firstName" placeholder="xxx" value="" required="">
+                      </div>                 
+                    </div>
+                    <div class="form-check form-switch d-flex justify-content-between align-items-center">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">هل تريد هذه المساهمة هدية ! </label>
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                    </div>  
+                    <div class="col-md-12">
+                      <label for="country" class="form-label">نوع البطاقة</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="">بطاقة اهداء</option>
+                      </select>
+                    </div>
+                    <div class="form-show">
+                      <a href="javascript:void(0)"><img src="./images/eye-icon.png" class="ms-2"></a>
+                      <label class="form-check-label" for="flexSwitchCheckDefault">معاينة الاهداء</label>
+                    </div> 
+                    <div class="form-check form-switch noborder">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                      <label class="form-check-label" for="flexSwitchCheckDefault">هل تريد هذه المساهمة هدية ! </label>
+                    </div> 
+                    <div class="col-md-12">
+                      <label for="firstName" class="form-label">جوال المهدي له</label>
+                      <input type="text" class="form-control text-start" id="firstName" placeholder="05 xxxxxxxxxxx" value="" required="">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="country" class="form-label">المهدي له</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="">الرجاء التحديد</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12">
+                      <label for="country" class="form-label">توقيع المهدي</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="">الرجاء التحديد</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12">
+                      <label for="firstName" class="form-label">الجوال</label>
+                      <input type="text" class="form-control text-start" id="firstName" placeholder="05 xxxxxxxxxxx" value="" required="">
+                    </div>        
+                    <div class="form-check custom-checkbox">                
+                      <input type="checkbox" class="form-check-input custom-control-input" id="same-address" checked="">                  
+                      <label class="form-check-label" for="same-address">
+                        موافق على <strong>شروط وأحكام</strong> الاكتتاب
+                      </label>                  
+                    </div>
+                    <button class="w-auto btn btn-secondary btn-lg px-5 mt-4 mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">ساهم الآن</button>
+                  </div>
                 </div>
+              </div>      
             </form>
           </div>
         </div>
       </div>
     </div>
-
-
 </body>
 </html>
 
