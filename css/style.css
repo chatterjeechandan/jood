@@ -2234,10 +2234,14 @@ form.profile-report-problem{
 
 .each-stepper {
     border-top: 1px solid #d7d2c7;
-    width: 25%;
+    width: 33%;
     margin-top: 0px;
     position: relative;
     font-weight: 600;
+}
+
+.home .each-stepper {
+    width: 25%;
 }
 
 .each-stepper::after{
@@ -3353,7 +3357,7 @@ ul.my-profile-initiative {
     background-repeat: repeat;
     background-size: contain;
     filter: blur(10px);
-    z-index: 999;
+    z-index: 9;
 }
 
 .movable-text-banner .blur-div
