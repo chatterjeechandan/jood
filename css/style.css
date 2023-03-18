@@ -158,7 +158,7 @@ header{
     position: relative;
 }
 
-.notification-holder .unread {
+.notification-holder div.unread {
     position: absolute;
     height: 15px;
     width: 15px;
@@ -3150,13 +3150,12 @@ ul.my-profile-initiative {
 }
 
 .profile-notification.header-notification ul li {
-    padding: 5px 15px 8px;
+    padding: 5px 0px 8px 15px;
     margin-bottom: 10px;
 }
 
 .profile-notification.header-notification ul li a {
     width: 100%;
-    margin-right: -30px;
 }
 
 .notification-modal .modal-content{
