@@ -832,7 +832,7 @@ form.profile-report-problem{
 }
 @keyframes marquee {
     0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
+    100% { transform: translate(100%, 0); }
 }
 
 /*****************Major Donors**********************/
@@ -3463,6 +3463,37 @@ ul.my-profile-initiative {
     background: #FA9A2A !important;
 }
 
+.desk-placement-banner .slick-dots {
+    position: absolute;
+    right: 16%;
+    bottom: 25%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+.desk-placement-banner ul.slick-dots li button {
+    height: 6px;
+    width: 6px !important;
+    background: #fff;
+    border-radius: 100%;
+    margin-left: 6px;
+    color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.desk-placement-banner ul.slick-dots li.slick-active button {
+    height: 25px;
+    border-radius: 5px 5px;
+    background: #FA9A2A !important;
+}
+
+.desk-placement-banner ul.slick-dots li{
+    display: flex;
+}
+
 /*share*/
 
 .share-dialog .modal-dialog{
@@ -4646,9 +4677,6 @@ ul.my-profile-initiative {
     .main-tab-wraper .nav.nav-tabs li .nav-link p {
         font-size: 15px;
     }
-    .tab-filter-btn {
-        display: none!important;
-    }
     .two-options .nav {
         display: flex;
         flex-wrap: unset;
@@ -4711,7 +4739,7 @@ ul.my-profile-initiative {
     }
 }
 
-@media only screen and (min-width: 1024px)  and (max-width: 1200px) {
+@media only screen and (min-width: 1024px)  and (max-width: 1280px) {
     .navbar-nav .nav-item{
         padding: 0 5px;
     }
@@ -4726,5 +4754,8 @@ ul.my-profile-initiative {
     }
     .placement-form{
         margin: 0 auto;
+    }
+    .movable-text-banner {
+        height: calc(100% - 300px);
     }
 }

@@ -75,7 +75,11 @@
           </div>             
         </div>
       </div>
-      <img src="./images/placement-banner.jpg" class="w-100 position-absolute d-none d-sm-block">
+      <div class="desk-placement-banner d-none d-sm-block w-100 position-absolute" dir="ltr">
+        <img src="./images/placement-banner.jpg">
+        <img src="./images/placement-banner.jpg">
+        <img src="./images/placement-banner.jpg">
+      </div>      
       <div class="mobile-placement-banner d-block d-sm-none" dir="ltr">
         <img src="./images/placement-banner-mobile.jpg">
         <img src="./images/placement-banner-mobile.jpg">
@@ -89,12 +93,6 @@
             <div class="text-container">
               <h3>جود الاكتتاب</h3>
               <h4>مراقبة الرسوم البيانية المتجددة، وسِجل أسعار الأسهم، وحاسبة الاستثمار.</h4>
-            </div>
-            <div class="slider-nav">
-              <div class="dot current"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>              
             </div>
             <div class="category-count-container d-flex flex-wrap">
               <div class="category-count ms-2">
@@ -695,6 +693,13 @@ $(document).ready(function() {
       slidesToShow: 1
     });    
   }
+  $(".desk-placement-banner").slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1
+    });
 });
 
 
