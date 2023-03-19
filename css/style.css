@@ -4712,6 +4712,10 @@ ul.my-profile-initiative {
         transform: translate(-50%,0%) !important;
     }
 
+    .placement-graph-area-container #myChart {
+        position: relative;
+    }
+
 }
 
 @media only screen and (min-width: 768px)  and (max-width: 950px) {
