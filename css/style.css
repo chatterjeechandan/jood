@@ -4535,7 +4535,6 @@ ul.my-profile-initiative {
     .movable-text-banner {
         position: absolute;
         top: 95px;
-        height: 55%;
         overflow: hidden;
         width: 100%;
     }
