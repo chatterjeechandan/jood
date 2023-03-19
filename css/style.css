@@ -155,7 +155,7 @@ header{
     background: #EFEFEF;
     margin-left: 10px;
     margin-top: 11px;
-    position: relative;
+    position: static;
 }
 
 .notification-holder div.unread {
@@ -168,7 +168,8 @@ header{
     color: #fff;
     font-size: 10px;
     line-height: 14px;
-    top: 5px;
+    bottom: 50% !important;
+    top: auto !important;
 }
 
 .sign-in-header{
@@ -3980,10 +3981,11 @@ ul.my-profile-initiative {
         background: transparent;
     }
     .mobile-menu-area{
-        display: block;
+        display: flex;
         float: left;
         margin-right: auto;
         margin-top: 14px;
+        align-items: center;
     }
     .initiative-container h4{
         text-align: center;
@@ -4703,6 +4705,13 @@ ul.my-profile-initiative {
         color: #FA9A2A;
     }
 
+    .mobile-menu-area .dropdown-menu{
+        min-width: 100% !important;
+        left: 50% !important;
+        top: 100% !important;
+        transform: translate(-50%,0%) !important;
+    }
+
 }
 
 @media only screen and (min-width: 768px)  and (max-width: 950px) {
@@ -4740,10 +4749,11 @@ ul.my-profile-initiative {
         overflow: auto;
     }
     .mobile-menu-area{
-        display: block;
+        display: flex;
         float: left;
         margin-right: auto;
         margin-top: 14px;
+        align-items: center;
     }
     .sidenav.active{
         width: 62vh;
