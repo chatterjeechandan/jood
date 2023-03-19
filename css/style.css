@@ -3715,6 +3715,153 @@ ul.my-profile-initiative {
     padding-bottom: 100px!important;
 }
 
+
+/************ALL Case*******************/
+
+.toogle-search-cases {
+    width: 100%!important;
+    margin-bottom: 50px!important;
+}
+
+.main-tab-wraper {
+    width: 100%;
+    display: block!important;
+}
+.main-tab-wraper .nav.nav-tabs {
+    width: 100%;
+    display: block!important;
+}
+
+.main-tab-wraper .nav.nav-tabs li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+.main-tab-wraper .nav.nav-tabs li button {
+    margin: 0 auto;
+    padding-bottom: 2px;
+}
+
+.main-tab-wraper .nav.nav-tabs li button span {
+    margin-left: 0;
+}
+
+.main-tab-wraper .nav.nav-tabs li button span p {
+    margin-bottom: 0;
+}
+
+.hide {
+    display: none!important;
+}
+.show {
+    display: block;
+}
+
+.case-banner-section {
+    position: relative;
+    margin: 120px 0 240px 0;
+}
+
+.case-banner-heading {
+    text-align: right!important;
+}
+
+.steps-wraper {
+    width: 50%;
+    background: #fff;
+    padding: 24px 50px;
+    position: absolute;
+    top: -55%;
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+    left: 6%;
+}
+
+.steps-wraper h4 {
+    font-weight: 400;
+    color: #3D9474;
+    font-size: 45px;
+    margin-bottom: 20px!important;
+}
+
+.steps-wraper p {
+    color: #6B7280;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.steps-wraper .stepper-area  {
+    margin: 65px 0 0 0;
+}
+.steps-wraper .stepper-area .each-stepper {
+    width: 33.3%;
+}
+
+.steps-wraper .stepper-area .each-stepper:last-child::after {
+    display: none;
+}
+
+.steps-wraper .stepper-area .each-stepper .above-div {
+    width: 100%;
+}
+
+.steps-wraper .stepper-area .each-stepper .above-div .title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #000;
+    margin-top: 15px;
+}
+
+.steps-wraper .stepper-area .each-stepper .above-div .sub-title {
+    font-size: 12px;
+    line-height: 18px;
+    color: #1F2937;
+}
+.steps-wraper .btn-secondary {
+    margin: 15px auto;
+}
+
+.second-div-wraper {
+    position: absolute;
+    right: 20%;
+    top: 135%;
+}
+
+.second-div-wraper .initiative-care-info {
+    max-width: 290px;
+    padding: 20px 20px 25px 20px;
+}
+
+.second-div-wraper .initiative-care-info .title {
+    text-align: right;
+    font-size: 14px;
+}
+.second-div-wraper .initiative-care-info .sub-title {
+ color:#6A6A6F;
+ font-size: 12px;
+ text-align: right;
+}
+.second-div-wraper .initiative-care-info .header {
+    font-size: 20px;
+}
+
+.second-div-wraper .initiative-care-info a img {
+    width:30px;
+    position: relative;
+    margin-top: 0;
+    margin-right: -10px;
+}
+.second-div-wraper .initiative-care-info .case-profiles {
+    list-style-type: none;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.second-div-wraper .initiative-care-info .case-profiles li {
+    display: inline-block;
+}
+
 /****************************Mobile Query**********************************/
 
 
@@ -4459,6 +4606,63 @@ ul.my-profile-initiative {
         margin-top: 0px;
     }
 
+    /**All Case***/
+    .second-div-wraper {
+        display: none;
+    }
+    .steps-wraper {
+        width: 95%;
+        position: relative;
+        top: unset;
+        left: unset;
+        margin: 0px auto;
+    }
+    .steps-wraper .stepper-area .each-stepper {
+        width: 100%;
+    }
+    .steps-wraper .stepper-area {
+        margin: 45px 0px 10px 0;
+    }
+    .main-tab-wraper .nav.nav-tabs li {
+        width: 32%;
+        padding: 0;
+    }
+    .main-tab-wraper .nav.nav-tabs li button {
+        margin: 0 auto;
+        padding-bottom: 2px;
+    }
+    
+    .main-tab-wraper .nav.nav-tabs li button span {
+        margin-left: 0;
+    }
+    
+    .main-tab-wraper .nav.nav-tabs li button span img {
+        width: 32px;
+    }
+    .main-tab-wraper .nav.nav-tabs li .nav-link {
+        padding: 2px;
+    }
+
+    .main-tab-wraper .nav.nav-tabs li .nav-link p {
+        font-size: 15px;
+    }
+    .tab-filter-btn {
+        display: none!important;
+    }
+    .two-options .nav {
+        display: flex;
+        flex-wrap: unset;
+    }
+    .two-options .nav .nav-link {
+        font-size: 14px;
+    }
+
+    .two-options .nav .nav-link span {
+        font-size: 15px;
+    }
+    .case-banner-section {
+        margin: 0px 0 50px 0;
+    }
 
 }
 
