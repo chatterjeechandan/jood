@@ -4755,7 +4755,4 @@ ul.my-profile-initiative {
     .placement-form{
         margin: 0 auto;
     }
-    .movable-text-banner {
-        height: calc(100% - 300px);
-    }
 }
