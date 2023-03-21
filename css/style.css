@@ -4546,14 +4546,14 @@ color:
         background: #FA9A2A;
         position: absolute;
         left: 0;
-        top: 24%;
+        top: 40%;
         transform: translateY(-50%);
         border-radius: 0 45px 45px 0;
         font-weight: 400;
         font-size: 18px;
-        line-height: 46px;
+        line-height: 26px;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         text-align: center;
         color: #fff;
         padding-left: 0px;
@@ -4561,6 +4561,12 @@ color:
         padding-bottom: 6px;
         padding-right: 5px;
         z-index: 999;
+    }
+
+    .mobile-ilastator {
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
 
     .slider-left-ribon img{
@@ -4638,6 +4644,7 @@ color:
         position: absolute;
         right: 10px;
         bottom: 10px;
+        z-index: 9999;
     }
 
     .home-container ul.slick-dots li button{
