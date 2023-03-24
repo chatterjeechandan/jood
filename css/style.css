@@ -2284,7 +2284,9 @@ form.profile-report-problem{
     color: #fff;
     font-family: 'Barlow';
     font-size: 28px;
-    line-height: 26px;
+    line-height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 .each-stepper .above-div .title{
@@ -3921,7 +3923,7 @@ ul.my-profile-initiative {
 }
 
 .copy-final-texts {
-    padding: 0 35px;
+    padding: 0 65px;
 }
 .copy-final-texts p{
 color:
@@ -4821,4 +4823,142 @@ color:
     .placement-form{
         margin: 0 auto;
     }
+}
+
+
+/* Css Modifications */
+
+.steps-wraper.signup_forms {
+    position: relative;
+    top: unset;
+    right: unset;
+    left: unset;
+    width: 100%;
+    border: none;
+}
+
+.about-us-first-section-description.signup_forms {
+    width: 100%;
+}
+
+/* .about-us-first-section-description.signup_forms form.report-problem {
+    border: none;
+}
+.steps-wraper.signup_forms .stepper-area .each-stepper::after {
+    background:url(../images/arrows.png);
+    width: 75px;
+}
+
+.steps-wraper.signup_forms .stepper-area .each-stepper {
+    border: none;
+} */
+
+.steps-wraper.signup_forms .each-stepper .above-div .step-count {
+    background: #CADCD5;
+    color: #3D9474;
+}
+
+.steps-wraper.signup_forms .each-stepper .above-div .step-count.active {
+    color: #fff;
+    background: #3D9474;
+}
+
+
+.about-us-first-section-description.signup_forms form.needs-validation.report-problem input.form-control {
+    background: #FBFBFB;
+}
+
+.for-mobile {
+    display: none!important;
+}
+.share-imodal-input {
+    padding-left: 45px!important;
+}
+
+@media only screen and (min-width: 320px)  and (max-width: 767px) {
+.steps-wraper.signup_forms {
+    padding: 18px 0px;
+}
+
+.steps-wraper.signup_forms .each-stepper .above-div {
+    padding: 20px 2px;
+}
+
+.steps-wraper.signup_forms .stepper-area .each-stepper .above-div .title  {
+    font-size: 19px;
+}
+
+.steps-wraper.signup_forms .stepper-area .each-stepper::after { 
+    left: -8px;
+}
+
+.about-us-first-section-description.signup_forms form.needs-validation.report-problem {
+    border: none;
+    padding: 0!important;
+    text-align: right;
+}
+
+.row.no-margin .col-lg-12 {
+    padding: 0;
+}
+
+.about-us-first-section-description.signup_forms form.needs-validation.report-problem .btn {
+    background: #3D9474;
+    width: 202px;
+    height: 55px;
+    border-color: #3D9474;
+}
+
+.for-portal {
+    display: none!important;
+}
+.for-mobile {
+    display: block!important;
+}
+ .half-width {
+    width: 49%;
+    float: right;
+    text-align: right!important;
+ }
+
+ .mobile-footers {
+    display: block!important;
+ }
+ img.for-mobile {
+    width: 100%;
+ }
+ .footer-title-divider {
+    margin-right: unset;
+ }
+ .full-width .footer-item.footer-column .row.row-cols-2.card-images {
+    width: 100%!important;
+ }
+
+ .full-width .footer-item.footer-column .row.row-cols-2.card-images .card-img-holder {
+    width: 100%!important;
+ }
+
+ .half-width ul li {
+    text-align: right!important;
+ }
+
+ /*.small-imgs {
+    width: 100%;
+    height: 295px!important;
+}
+
+.large-imgs {
+    width: 100%;
+    height: 295px!important;
+}*/
+
+    .hover-service-small{
+        width: 33%;
+        margin-top: 20px;
+    }
+}
+
+
+.home-split-img-hover.large-imgs {
+    height: 576px;
 }
